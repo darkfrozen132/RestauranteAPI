@@ -16,6 +16,7 @@ builder.Services.Add(new ServiceDescriptor(typeof(IPedidoD), new PedidoDetalleRe
 builder.Services.Add(new ServiceDescriptor(typeof (IPersonal),new PersonalRespositorio()));
 builder.Services.Add(new ServiceDescriptor(typeof(IPlato), new PlatoRepositorio()));
 builder.Services.Add(new ServiceDescriptor(typeof(ITCliente), new TipoClienteRepositorio()));
+builder.Services.Add(new ServiceDescriptor(typeof(IUsuario), new UsuarioRepositorio()));
 
 builder.Services.AddControllers();
 builder.Services.AddControllers();

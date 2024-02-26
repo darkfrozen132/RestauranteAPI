@@ -46,9 +46,10 @@ INSERT INTO TA_plato (id_plato, nombre_plato, costo, disponible) VALUES
 (9, 'Parrillada Mixta', 12.5, 1),
 (10, 'Arroz con Pollo', 8.0, 1);
 
+//USUARIOS
 
-
-
+INSERT into TA_usuario values(1,'ADMINISTRADOR', 'admin123','123456');
+INSERT into TA_usuario values(2,'USUARIO', 'user123','user123');
 
 
 
