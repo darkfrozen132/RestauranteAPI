@@ -73,3 +73,13 @@ create table TA_pedido_detalle(
 alter table TA_pedido_detalle add constraint TA_pedido_detalle_pk primary key(id_pedido_detalle);
 alter table TA_pedido_detalle add constraint TA_pedido_fk foreign key (id_pedido) references TA_pedido (id_pedido);
 alter table TA_pedido_detalle add constraint TA_plato_fk foreign key (id_plato) references TA_plato (id_plato);
+
+create table TA_usuario(
+	id_usuario int NOT NULL,
+	categoria varchar(20) NOT NULL,
+	usuario varchar(20) NOT NULL,
+	contrasena varchar(20) NOT NULL
+);
+alter table TA_usuario add constraint TA_usuario_pk primary key (id_usuario);
+
+

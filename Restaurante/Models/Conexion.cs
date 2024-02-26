@@ -29,6 +29,8 @@ public partial class Conexion : DbContext
 
     public virtual DbSet<TaTipoCliente> TaTipoClientes { get; set; } 
 
+    public virtual DbSet<TaUsuario> TaUsuarios { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlServer("Data Source=restauranteweb.database.windows.net;User ID=restaurante;Password=123456789Leo;Initial Catalog=restaurante;Encrypt=True");
@@ -177,6 +179,28 @@ public partial class Conexion : DbContext
                 .ValueGeneratedNever()
                 .HasColumnName("id_tipo_cliente");
             entity.Property(e => e.Porcentaje).HasColumnName("porcentaje");
+        });
+
+        modelBuilder.Entity<TaUsuario>(entity =>
+        {
+            entity.HasKey(e => e.IdUsuario).HasName("TA_usuario_pk");
+
+            entity.ToTable("TA_usuario");
+
+            entity.Property(e => e.IdUsuario)
+                .ValueGeneratedNever()
+                .HasColumnName("id_usuario");
+
+            entity.Property(e => e.Categoria)
+                .HasColumnName("categoria");
+
+            entity.Property(e => e.Usuario)
+                .HasColumnName("usuario")
+                .IsRequired();
+
+            entity.Property(e => e.Contrasena)
+                .HasColumnName("contrasena")
+                .IsRequired();
         });
 
         OnModelCreatingPartial(modelBuilder);

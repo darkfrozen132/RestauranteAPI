@@ -3,40 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\controllers\\tipoclientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:controllers\\tipoclientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\restaurante.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:restaurante.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\service\\iusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:service\\iusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\models\\tausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:models\\tausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\models\\tatipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:models\\tatipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\models\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:models\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\controllers\\platocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:controllers\\platocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\controllers\\personalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:controllers\\personalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\controllers\\tipoclientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:controllers\\tipoclientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\controllers\\pedidodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:controllers\\pedidodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\service\\usuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:service\\usuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\service\\tipoclienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:service\\tipoclienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\controllers\\mesascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:controllers\\mesascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\restaurante.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:restaurante.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\service\\platorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:service\\platorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\service\\personalrespositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,12 +59,72 @@
       "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:service\\pedidorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\service\\mesasrepositorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:service\\mesasrepositorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\service\\itcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:service\\itcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\service\\clienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:service\\clienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\models\\taplato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:models\\taplato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\models\\tacliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:models\\tacliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\models\\tamesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:models\\tamesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\service\\iplato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:service\\iplato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\service\\ipedidod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:service\\ipedidod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\service\\icliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:service\\icliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\service\\imesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:service\\imesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\service\\ipedidocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:service\\ipedidocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\controllers\\mesascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:controllers\\mesascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\controllers\\pedidodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:controllers\\pedidodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\controllers\\personalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:controllers\\personalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|c:\\users\\leoncio\\documents\\github\\restauranteapi\\restaurante\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{36737E37-831D-4EDC-900A-6579587FC725}|Restaurante.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +134,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,149 +142,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PedidoController.cs",
-              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\PedidoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PedidoController.cs",
-              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\PedidoController.cs*",
-              "RelativeToolTip": "Controllers\\PedidoController.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAPAAAA",
+              "DocumentIndex": 2,
+              "Title": "TaUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Models\\TaUsuario.cs",
+              "RelativeDocumentMoniker": "Models\\TaUsuario.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Models\\TaUsuario.cs",
+              "RelativeToolTip": "Models\\TaUsuario.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T22:50:48.603Z",
+              "WhenOpened": "2024-02-26T23:14:13.652Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "IUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\IUsuario.cs",
+              "RelativeDocumentMoniker": "Service\\IUsuario.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\IUsuario.cs",
+              "RelativeToolTip": "Service\\IUsuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T23:21:23.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "TipoClienteController.cs",
               "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\TipoClienteController.cs",
               "RelativeDocumentMoniker": "Controllers\\TipoClienteController.cs",
-              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\TipoClienteController.cs*",
-              "RelativeToolTip": "Controllers\\TipoClienteController.cs*",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\TipoClienteController.cs",
+              "RelativeToolTip": "Controllers\\TipoClienteController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-26T22:50:38.021Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\ClienteController.cs*",
-              "RelativeToolTip": "Controllers\\ClienteController.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T22:48:51.777Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PedidoDController.cs",
-              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\PedidoDController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PedidoDController.cs",
-              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\PedidoDController.cs*",
-              "RelativeToolTip": "Controllers\\PedidoDController.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T22:15:18.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "PlatoController.cs",
               "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\PlatoController.cs",
               "RelativeDocumentMoniker": "Controllers\\PlatoController.cs",
               "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\PlatoController.cs",
               "RelativeToolTip": "Controllers\\PlatoController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-26T22:15:12.651Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PersonalController.cs",
-              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\PersonalController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PersonalController.cs",
-              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\PersonalController.cs",
-              "RelativeToolTip": "Controllers\\PersonalController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T20:56:51.983Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "MesasController.cs",
-              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\MesasController.cs",
-              "RelativeDocumentMoniker": "Controllers\\MesasController.cs",
-              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\MesasController.cs",
-              "RelativeToolTip": "Controllers\\MesasController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T18:51:21.42Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IPedidocs.cs",
-              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\IPedidocs.cs",
-              "RelativeDocumentMoniker": "Service\\IPedidocs.cs",
-              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\IPedidocs.cs",
-              "RelativeToolTip": "Service\\IPedidocs.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T18:48:26.673Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAABAAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-26T18:35:34.631Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-02-26T18:35:33.776Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PedidoRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\PedidoRepositorio.cs",
-              "RelativeDocumentMoniker": "Service\\PedidoRepositorio.cs",
-              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\PedidoRepositorio.cs",
-              "RelativeToolTip": "Service\\PedidoRepositorio.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "TaTipoCliente.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Models\\TaTipoCliente.cs",
+              "RelativeDocumentMoniker": "Models\\TaTipoCliente.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Models\\TaTipoCliente.cs",
+              "RelativeToolTip": "Models\\TaTipoCliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T22:39:48.808Z",
+              "WhenOpened": "2024-02-26T23:14:15.69Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "Restaurante.csproj",
               "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Restaurante.csproj",
               "RelativeDocumentMoniker": "Restaurante.csproj",
@@ -225,7 +233,72 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Models\\Conexion.cs",
+              "RelativeDocumentMoniker": "Models\\Conexion.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Models\\Conexion.cs",
+              "RelativeToolTip": "Models\\Conexion.cs",
+              "ViewState": "AQIAAL0AAAAAAAAAAAAiwMUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T23:11:50.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "UsuarioRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\UsuarioRepositorio.cs",
+              "RelativeDocumentMoniker": "Service\\UsuarioRepositorio.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\UsuarioRepositorio.cs",
+              "RelativeToolTip": "Service\\UsuarioRepositorio.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T23:21:41.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAA5wDYAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T23:47:52.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TipoClienteRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\TipoClienteRepositorio.cs",
+              "RelativeDocumentMoniker": "Service\\TipoClienteRepositorio.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\TipoClienteRepositorio.cs",
+              "RelativeToolTip": "Service\\TipoClienteRepositorio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T23:33:42.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PlatoRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\PlatoRepositorio.cs",
+              "RelativeDocumentMoniker": "Service\\PlatoRepositorio.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\PlatoRepositorio.cs",
+              "RelativeToolTip": "Service\\PlatoRepositorio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T23:23:47.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "PersonalRespositorio.cs",
               "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\PersonalRespositorio.cs",
               "RelativeDocumentMoniker": "Service\\PersonalRespositorio.cs",
@@ -234,6 +307,240 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-26T22:39:51.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PedidoRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\PedidoRepositorio.cs",
+              "RelativeDocumentMoniker": "Service\\PedidoRepositorio.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\PedidoRepositorio.cs",
+              "RelativeToolTip": "Service\\PedidoRepositorio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T22:39:48.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MesasRepositorios.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\MesasRepositorios.cs",
+              "RelativeDocumentMoniker": "Service\\MesasRepositorios.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\MesasRepositorios.cs",
+              "RelativeToolTip": "Service\\MesasRepositorios.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T23:23:45.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ITCliente.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\ITCliente.cs",
+              "RelativeDocumentMoniker": "Service\\ITCliente.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\ITCliente.cs",
+              "RelativeToolTip": "Service\\ITCliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T23:21:44.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ClienteRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\ClienteRepositorio.cs",
+              "RelativeDocumentMoniker": "Service\\ClienteRepositorio.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\ClienteRepositorio.cs",
+              "RelativeToolTip": "Service\\ClienteRepositorio.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T23:22:49.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TaPlato.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Models\\TaPlato.cs",
+              "RelativeDocumentMoniker": "Models\\TaPlato.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Models\\TaPlato.cs",
+              "RelativeToolTip": "Models\\TaPlato.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T23:25:41.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TaCliente.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Models\\TaCliente.cs",
+              "RelativeDocumentMoniker": "Models\\TaCliente.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Models\\TaCliente.cs",
+              "RelativeToolTip": "Models\\TaCliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T23:40:08.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TaMesa.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Models\\TaMesa.cs",
+              "RelativeDocumentMoniker": "Models\\TaMesa.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Models\\TaMesa.cs",
+              "RelativeToolTip": "Models\\TaMesa.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T23:14:19.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IPlato.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\IPlato.cs",
+              "RelativeDocumentMoniker": "Service\\IPlato.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\IPlato.cs",
+              "RelativeToolTip": "Service\\IPlato.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T23:22:53.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IPedidoD.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\IPedidoD.cs",
+              "RelativeDocumentMoniker": "Service\\IPedidoD.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\IPedidoD.cs",
+              "RelativeToolTip": "Service\\IPedidoD.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T23:22:41.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ICliente.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\ICliente.cs",
+              "RelativeDocumentMoniker": "Service\\ICliente.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\ICliente.cs",
+              "RelativeToolTip": "Service\\ICliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T23:22:48.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IMesas.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\IMesas.cs",
+              "RelativeDocumentMoniker": "Service\\IMesas.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\IMesas.cs",
+              "RelativeToolTip": "Service\\IMesas.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T23:22:46.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IPedidocs.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\IPedidocs.cs",
+              "RelativeDocumentMoniker": "Service\\IPedidocs.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\IPedidocs.cs",
+              "RelativeToolTip": "Service\\IPedidocs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T18:48:26.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PedidoController.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\PedidoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PedidoController.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\PedidoController.cs",
+              "RelativeToolTip": "Controllers\\PedidoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T22:50:48.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "Controllers\\ClienteController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAcAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T22:48:51.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "PedidoDController.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\PedidoDController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PedidoDController.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\PedidoDController.cs",
+              "RelativeToolTip": "Controllers\\PedidoDController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T22:15:18.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PersonalController.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\PersonalController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PersonalController.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\PersonalController.cs",
+              "RelativeToolTip": "Controllers\\PersonalController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T20:56:51.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MesasController.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\MesasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MesasController.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Controllers\\MesasController.cs",
+              "RelativeToolTip": "Controllers\\MesasController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T18:51:21.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-26T18:35:33.776Z",
               "EditorCaption": ""
             }
           ]
