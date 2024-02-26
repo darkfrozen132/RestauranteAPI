@@ -11,7 +11,7 @@ namespace Restaurante.Controllers
 
         public readonly IPedidocs _pedidocs;
 
-        PedidoController(IPedidocs pedidocs)
+        public PedidoController(IPedidocs pedidocs)
         {
             _pedidocs = pedidocs;   
         }

@@ -11,7 +11,7 @@ namespace Restaurante.Controllers
     {
         public readonly ICliente _cliente;
 
-        ClienteController (ICliente cliente)
+        public ClienteController (ICliente cliente)
         {
             _cliente = cliente;
         }

@@ -9,7 +9,7 @@ namespace Restaurante.Controllers
     public class PedidoDController : Controller
     {
         public readonly IPedidoD _pedidocsD;
-        PedidoDController(IPedidoD pedidocsD)
+        public PedidoDController(IPedidoD pedidocsD)
         {
             _pedidocsD = pedidocsD;
         }

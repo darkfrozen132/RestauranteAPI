@@ -13,7 +13,7 @@ namespace Restaurante.Controllers
 
         readonly ITCliente _tCliente;
 
-        TipoClienteController (ITCliente tCliente)
+        public TipoClienteController (ITCliente tCliente)
         {
             _tCliente = tCliente;   
         }
