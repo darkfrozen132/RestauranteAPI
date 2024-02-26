@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/QtPvIV1ENjPe2UPeKHm6sFnVZuPf613mb2WZ6naGkTh/zEg+ZU3XeuLkufyY0Rm8hA9XdufyvtMBb1yJggTsA==",
+  "dgSpecHash": "rwU0ZwjLNSRqOW6k1kvUS49PkS1p1VOyaC0Cng5z13yOGr8t3nSAFTA1W+c3F5AHIpMKc38LoAe1jI7ET1tgFQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Leoncio\\Documents\\webService\\Restaurante\\Restaurante.csproj",
+  "projectFilePath": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Restaurante.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Leoncio\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Leoncio\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

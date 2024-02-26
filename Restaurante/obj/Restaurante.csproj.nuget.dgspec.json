@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Leoncio\\Documents\\webService\\Restaurante\\Restaurante.csproj": {}
+    "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Restaurante.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Leoncio\\Documents\\webService\\Restaurante\\Restaurante.csproj": {
+    "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Restaurante.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leoncio\\Documents\\webService\\Restaurante\\Restaurante.csproj",
+        "projectUniqueName": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Restaurante.csproj",
         "projectName": "Restaurante",
-        "projectPath": "C:\\Users\\Leoncio\\Documents\\webService\\Restaurante\\Restaurante.csproj",
+        "projectPath": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Restaurante.csproj",
         "packagesPath": "C:\\Users\\Leoncio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leoncio\\Documents\\webService\\Restaurante\\obj\\",
+        "outputPath": "C:\\Users\\Leoncio\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
