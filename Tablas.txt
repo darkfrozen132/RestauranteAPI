@@ -1,0 +1,75 @@
+create table TA_mesas(
+	
+	id_mesa int NOT NULL,
+	cantidad_asientos int NOT NULL,
+	descripcion varchar(25) NOT NULL,
+	reservado int NOT NULL,
+);
+
+alter table TA_mesas add constraint TA_mesas_pk primary key (id_mesa);
+
+
+create table TA_tipo_cliente(
+
+	id_tipo_cliente int NOT NULL,
+	porcentaje int NOT NULL
+
+);
+
+alter table TA_tipo_cliente add constraint TA_tipo_cliente_pk primary key (id_tipo_cliente);
+create table TA_cliente(
+	id_cliente int NOT NULL,-- cliente=0
+
+	nombre varchar(50) NOT NULL,	--defecto
+
+	id_tipo_cliente int NOT NULL 
+
+
+);
+alter table TA_cliente add constraint TA_cliente_pk primary key (id_cliente);
+alter table TA_cliente add constraint TA_tipo_cliente_fk foreign key (id_tipo_cliente) references TA_tipo_cliente (id_tipo_cliente);
+create table TA_plato(
+	id_plato int NOT NULL,
+	nombre_plato varchar(25) NOT NULL,
+	costo decimal(3,1) NOT NULL,
+	disponible int NOT NULL
+
+);
+alter table TA_plato add constraint TA_platos_pk primary key (id_plato);
+
+create table TA_personal(
+	id_personal int NOT NULL,
+	nombre_personal varchar(25),
+	permisos int
+
+);
+alter table TA_personal add constraint TA_personal_pk primary key (id_personal);
+
+create table TA_pedido(
+	id_pedido int NOT NULL,
+	id_mesa int NOT NULL,
+	id_personal int NOT NULL,
+	id_cliente int NOT NULL, --id cliente!=0 id cliente=0
+	dia date NOT NULL,
+	hora_inicio_pedido time,	
+	hora_fin_pedido time,
+	total decimal(5,1),
+
+
+);
+alter table TA_pedido add constraint TA_pedido_pk primary key (id_pedido);
+alter table TA_pedido add constraint TA_mesa_fk foreign key (id_mesa) references TA_mesas (id_mesa);
+alter table TA_pedido add constraint TA_personal_fk foreign key (id_personal) references TA_personal (id_personal);
+alter table TA_pedido add constraint TA_cliente_fk foreign key (id_cliente) references TA_cliente (id_cliente);
+
+
+create table TA_pedido_detalle(
+	id_pedido_detalle int NOT NULL,
+	id_pedido int NOT NULL,
+	id_plato int NOT NULL,
+	cantidad int NOT NULL
+
+);
+alter table TA_pedido_detalle add constraint TA_pedido_detalle_pk primary key(id_pedido_detalle);
+alter table TA_pedido_detalle add constraint TA_pedido_fk foreign key (id_pedido) references TA_pedido (id_pedido);
+alter table TA_pedido_detalle add constraint TA_plato_fk foreign key (id_plato) references TA_plato (id_plato);
