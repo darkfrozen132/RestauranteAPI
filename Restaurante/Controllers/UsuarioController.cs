@@ -61,10 +61,10 @@ namespace Restaurante.Controllers
         [HttpGet("Verificar")]
         public IActionResult verificacion(TaUsuario obj)
         {
-            // Llamar al método de verificación del repositorio de usuarios
+       
             int resultadoVerificacion = _IUsuario.verfificacion(obj);
 
-            // Dependiendo del resultado de la verificación, retornar un resultado específico
+         
             switch (resultadoVerificacion)
             {
                 case 0:
