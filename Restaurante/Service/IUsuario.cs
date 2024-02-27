@@ -13,5 +13,8 @@ namespace Restaurante.Service
         void modificar(TaUsuario TaUsuario);
 
         void eleminar(int id);
+
+        int verfificacion   (TaUsuario TaUsuario);
+    
     }
 }
