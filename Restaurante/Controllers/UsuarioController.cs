@@ -58,9 +58,29 @@ namespace Restaurante.Controllers
             _IUsuario.modificar(obj);
             return CreatedAtAction(nameof(put), obj);
         }
+        [HttpGet("Verificar")]
+        public IActionResult verificacion(TaUsuario obj)
+        {
+       
+            int resultadoVerificacion = _IUsuario.verfificacion(obj);
 
+         
+            switch (resultadoVerificacion)
+            {
+                case 0:
+                   
+                    return Unauthorized(); 
 
-
+                case 1:
+                 
+                    
+                    return Ok(); 
+                default:
+               
+                  
+                    return StatusCode(500); 
+            }
+        }
 
 
     }

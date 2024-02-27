@@ -37,5 +37,24 @@ namespace Restaurante.Service
         {
             return conex.TaUsuarios.Where(tpro => tpro.IdUsuario == id).FirstOrDefault();
         }
+
+        public int verfificacion(TaUsuario TaUsuario)
+        {
+            var usuarioExistente = conex.TaUsuarios.FirstOrDefault(u => u.Usuario == TaUsuario.Usuario);
+           if(usuarioExistente == null)
+            {
+                return 0;
+            }
+           if(usuarioExistente.Contrasena == TaUsuario.Contrasena)
+            {
+                return 1;
+
+            }
+
+        else
+            {
+                return 0;
+            }
+        }
     }
 }

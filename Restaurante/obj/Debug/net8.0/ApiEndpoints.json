@@ -592,6 +592,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Restaurante.Controllers.UsuarioController",
+    "Method": "verificacion",
+    "RelativePath": "api/Usuario/Verificar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "obj",
+        "Type": "Restaurante.Models.TaUsuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Restaurante.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",
