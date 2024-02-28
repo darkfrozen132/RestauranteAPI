@@ -1,0 +1,3 @@
+server:restauranteweb.database.windows.net
+usuario:restaurante
+contrasena:123456789Leo
