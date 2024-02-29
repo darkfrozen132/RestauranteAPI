@@ -48,8 +48,8 @@ public class Login extends AppCompatActivity {
                 String password = _etPasword.getText().toString().trim();
 
                 Usuario usuario = new Usuario(0,"", username, password);
-                Usuario user2= new Usuario(3,"ADMINISTRADOR","123","123");
-             verificar(user2);
+
+             verificar(usuario);
             }
         });
 
@@ -62,9 +62,7 @@ public class Login extends AppCompatActivity {
 
             @Override
             public void onResponse(Call<Void> call, Response<Void> response) {
-                int statusCode = response.code();
-                String valorString = String.valueOf(statusCode);
-                mensaje(valorString);
+
                if(response.isSuccessful())
                {
                       mensaje("LOGEO EXITOSO");
