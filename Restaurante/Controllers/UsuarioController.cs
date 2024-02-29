@@ -58,11 +58,11 @@ namespace Restaurante.Controllers
             _IUsuario.modificar(obj);
             return CreatedAtAction(nameof(put), obj);
         }
-        [HttpPost("Verificar")]
+        [HttpPost("verificar")]
         public IActionResult verificacion(TaUsuario obj)
         {
        
-            int resultadoVerificacion = _IUsuario.verfificacion(obj);
+            int resultadoVerificacion = _IUsuario.verificacion(obj);
 
          
             switch (resultadoVerificacion)

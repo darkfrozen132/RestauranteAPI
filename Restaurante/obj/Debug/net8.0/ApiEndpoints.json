@@ -545,6 +545,22 @@
   },
   {
     "ContainingType": "Restaurante.Controllers.UsuarioController",
+    "Method": "verificacion",
+    "RelativePath": "api/Usuario/2",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "obj",
+        "Type": "Restaurante.Models.TaUsuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Restaurante.Controllers.UsuarioController",
     "Method": "add",
     "RelativePath": "api/Usuario/agregar",
     "HttpMethod": "POST",
@@ -580,22 +596,6 @@
     "Method": "put",
     "RelativePath": "api/Usuario/modificar",
     "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "obj",
-        "Type": "Restaurante.Models.TaUsuario",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Restaurante.Controllers.UsuarioController",
-    "Method": "verificacion",
-    "RelativePath": "api/Usuario/Verificar",
-    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [

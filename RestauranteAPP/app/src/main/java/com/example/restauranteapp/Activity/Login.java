@@ -48,17 +48,23 @@ public class Login extends AppCompatActivity {
                 String password = _etPasword.getText().toString().trim();
 
                 Usuario usuario = new Usuario(0,"", username, password);
-             verificar(usuario);
+                Usuario user2= new Usuario(3,"ADMINISTRADOR","123","123");
+             verificar(user2);
             }
         });
 
     }
 
     private void verificar(Usuario obj) {
+        String parametro= obj.getUsuario();
         Call<Void> call = serviceAPI.verificacion(obj);
         call.enqueue(new Callback<Void>() {
+
             @Override
             public void onResponse(Call<Void> call, Response<Void> response) {
+                int statusCode = response.code();
+                String valorString = String.valueOf(statusCode);
+                mensaje(valorString);
                if(response.isSuccessful())
                {
                       mensaje("LOGEO EXITOSO");

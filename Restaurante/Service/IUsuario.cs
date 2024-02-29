@@ -14,7 +14,7 @@ namespace Restaurante.Service
 
         void eleminar(int id);
 
-        int verfificacion   (TaUsuario TaUsuario);
+        int verificacion(TaUsuario TaUsuario);
     
     }
 }
