@@ -64,7 +64,7 @@ public class Login extends AppCompatActivity {
     }
 
     private void verificar(Usuario obj) {
-<<<<<<< Updated upstream
+
 
         Call<Void> call = serviceAPI.verificacion(obj);
         call.enqueue(new Callback<Void>() {
@@ -81,7 +81,7 @@ public class Login extends AppCompatActivity {
                }else {
                  mensaje("SU CUENTA NO EXISTE");
                }
-=======
+
         Call<Response<Void>> call = serviceAPI.verificacion(obj);
         call.enqueue(new Callback<Response<Void>>() {
             @Override
@@ -91,7 +91,7 @@ public class Login extends AppCompatActivity {
                 } else {
                     mensaje("SU CUENTA NO EXISTE");
                 }
->>>>>>> Stashed changes
+
             }
 
             @Override
