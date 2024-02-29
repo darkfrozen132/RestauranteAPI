@@ -2,7 +2,7 @@ package com.example.restauranteapp.Models;
 
 public class Usuario {
 
-    private int id;
+    private int IdUsuario;
 
     private String categoria;
 
@@ -11,20 +11,29 @@ public class Usuario {
     private String contrasena;
 
 
-    public Usuario(){
-
+    public Usuario(int idUsuario) {
+        IdUsuario = idUsuario;
     }
 
-    public Usuario(int id,String categoria, String usuario, String contrasena){
-        this.id=id;
+    public Usuario(int idUsuario, String categoria, String usuario, String contrasena) {
+        IdUsuario = idUsuario;
+        this.categoria = categoria;
+        this.usuario = usuario;
+        this.contrasena = contrasena;
     }
 
-    public int getId() {
-        return id;
+    public Usuario(String categoria, String usuario, String contrasena) {
+        this.categoria = categoria;
+        this.usuario = usuario;
+        this.contrasena = contrasena;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public int getIdUsuario() {
+        return IdUsuario;
+    }
+
+    public void setIdUsuario(int idUsuario) {
+        IdUsuario = idUsuario;
     }
 
     public String getCategoria() {
@@ -50,10 +59,4 @@ public class Usuario {
     public void setContrasena(String contrasena) {
         this.contrasena = contrasena;
     }
-
-
-
-
-
-
 }

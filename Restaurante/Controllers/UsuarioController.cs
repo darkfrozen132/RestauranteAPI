@@ -58,7 +58,7 @@ namespace Restaurante.Controllers
             _IUsuario.modificar(obj);
             return CreatedAtAction(nameof(put), obj);
         }
-        [HttpGet("Verificar")]
+        [HttpPost("Verificar")]
         public IActionResult verificacion(TaUsuario obj)
         {
        

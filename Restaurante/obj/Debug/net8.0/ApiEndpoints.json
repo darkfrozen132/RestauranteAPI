@@ -595,7 +595,7 @@
     "ContainingType": "Restaurante.Controllers.UsuarioController",
     "Method": "verificacion",
     "RelativePath": "api/Usuario/Verificar",
-    "HttpMethod": "GET",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
