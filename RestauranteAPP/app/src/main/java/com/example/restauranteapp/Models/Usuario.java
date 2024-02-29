@@ -11,6 +11,7 @@ public class Usuario {
     private String contrasena;
 
 
+<<<<<<< Updated upstream
     public Usuario(){
 
     }
@@ -27,6 +28,10 @@ public class Usuario {
     }
 
     public Usuario(String categoria, String usuario, String contrasena) {
+=======
+    public Usuario(int idUsuario, String categoria, String usuario, String contrasena) {
+        this.idUsuario = idUsuario;
+>>>>>>> Stashed changes
         this.categoria = categoria;
         this.usuario = usuario;
         this.contrasena = contrasena;
@@ -37,7 +42,11 @@ public class Usuario {
     }
 
     public void setIdUsuario(int idUsuario) {
+<<<<<<< Updated upstream
         idUsuario = idUsuario;
+=======
+        this.idUsuario = idUsuario;
+>>>>>>> Stashed changes
     }
 
     public String getCategoria() {

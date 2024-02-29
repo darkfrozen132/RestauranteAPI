@@ -64,6 +64,7 @@ public class Login extends AppCompatActivity {
     }
 
     private void verificar(Usuario obj) {
+<<<<<<< Updated upstream
 
         Call<Void> call = serviceAPI.verificacion(obj);
         call.enqueue(new Callback<Void>() {
@@ -80,14 +81,26 @@ public class Login extends AppCompatActivity {
                }else {
                  mensaje("SU CUENTA NO EXISTE");
                }
+=======
+        Call<Response<Void>> call = serviceAPI.verificacion(obj);
+        call.enqueue(new Callback<Response<Void>>() {
+            @Override
+            public void onResponse(Call<Response<Void>> call, Response<Response<Void>> response) {
+                if(response.isSuccessful()) {
+                    mensaje("LOGEO EXITOSO");
+                } else {
+                    mensaje("SU CUENTA NO EXISTE");
+                }
+>>>>>>> Stashed changes
             }
 
             @Override
-            public void onFailure(Call<Void> call, Throwable t) {
-                Toast.makeText(null,"Error", Toast.LENGTH_LONG).show();
+            public void onFailure(Call<Response<Void>> call, Throwable t) {
+                mensaje("Error: " + t.getMessage());
             }
         });
     }
+
     public void mensaje(String msg)
     {
         AlertDialog.Builder alerta = new AlertDialog.Builder(this);
