@@ -1,6 +1,9 @@
 package com.example.restauranteapp.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.text.TextUtils;
+
 import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.View;
@@ -44,30 +47,36 @@ public class Login extends AppCompatActivity {
         _Log.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
                 String username = _etUser.getText().toString().trim();
                 String password = _etPasword.getText().toString().trim();
-
-                Usuario usuario = new Usuario(0,"", username, password);
-                Usuario user2= new Usuario(3,"ADMINISTRADOR","123","123");
-             verificar(user2);
+                if (!TextUtils.isEmpty(username) &&
+                        !TextUtils.isEmpty(password)) {
+                    Usuario usuario = new Usuario(0, "", username, password);
+                    verificar(usuario);
+                } else {
+                         mensaje("COMPLETE TODOS LOS CAMPOS");
+                }
             }
         });
 
     }
 
     private void verificar(Usuario obj) {
-        String parametro= obj.getUsuario();
+
         Call<Void> call = serviceAPI.verificacion(obj);
         call.enqueue(new Callback<Void>() {
 
             @Override
             public void onResponse(Call<Void> call, Response<Void> response) {
-                int statusCode = response.code();
-                String valorString = String.valueOf(statusCode);
-                mensaje(valorString);
+              //  int statusCode = response.code();
+             //   String valorString = String.valueOf(statusCode);
+              //  mensaje(valorString);
                if(response.isSuccessful())
                {
                       mensaje("LOGEO EXITOSO");
+               
                }else {
                  mensaje("SU CUENTA NO EXISTE");
                }

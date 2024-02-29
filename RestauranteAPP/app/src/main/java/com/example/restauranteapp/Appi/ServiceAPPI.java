@@ -20,6 +20,6 @@ public interface ServiceAPPI {
     @DELETE("usuario/eliminar/{id}")
     public abstract Call<Usuario> delete(@Path("id") int id);
     @POST("usuario/verificar")
-    //public  abstract   Call<Void> verificacion(@Body Usuario obj);
-    public abstract Call<Void> verificacion(@Body Usuario obj);
+    public  abstract   Call<Void> verificacion(@Body Usuario obj);
+    //public abstract Call<Void> verificacion(@Body Usuario obj);
 }
