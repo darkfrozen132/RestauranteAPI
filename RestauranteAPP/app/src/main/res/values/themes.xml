@@ -1,9 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.RestauranteAPP" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
+    <!-- Colores -->
 
-    <style name="Theme.RestauranteAPP" parent="Base.Theme.RestauranteAPP" />
+
+    <!-- Estilo de la aplicación -->
+    <style name="Theme.RestauranteAPP" parent="Base.Theme.RestauranteAPP">
+        <!-- Personalizaciones adicionales específicas del tema RestauranteAPP -->
+        <!-- Puedes agregar más elementos de estilo aquí si es necesario -->
+    </style>
 </resources>

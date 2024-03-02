@@ -21,11 +21,23 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+
+import android.view.View;
+import android.widget.TextView;
+import android.widget.ImageView;
 public class Login extends AppCompatActivity {
 
-    private EditText _etUser;
-    private EditText _etPasword;
-    private Button _Log;
+    private View _bg__login_ek2;
+    private TextView login_ek3;
+    private ImageView rectangle_1;
+    private ImageView rectangle_2;
+    private TextView usuario_;
+    private TextView contrase_a_;
+    private TextView user;
+    private TextView password;
+    private View _bg__group_1_ek1;
+    private View rectangle_3;
+    private TextView iniciar_sesion;
 
     private ServiceAPPI serviceAPI;
 
@@ -34,20 +46,28 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
-        _etUser = (EditText) findViewById(R.id.txtUser);
-        _etPasword = (EditText) findViewById(R.id.txtPassword);
-        _Log = (Button) findViewById(R.id.buttonLogin);
+        _bg__login_ek2 = (View) findViewById(R.id._bg__login_ek2);
+        login_ek3 = (TextView) findViewById(R.id.login_ek3);
+        rectangle_1 = (ImageView) findViewById(R.id.rectangle_1);
+        rectangle_2 = (ImageView) findViewById(R.id.rectangle_2);
+        usuario_ = (TextView) findViewById(R.id.usuario_);
+        contrase_a_ = (TextView) findViewById(R.id.contrase_a_);
+        user = (TextView) findViewById(R.id.user);
+        password = (TextView) findViewById(R.id.password);
+        _bg__group_1_ek1 = (View) findViewById(R.id._bg__group_1_ek1);
+        rectangle_3 = (View) findViewById(R.id.rectangle_3);
+        iniciar_sesion = (TextView) findViewById(R.id.iniciar_sesion);
 
         serviceAPI = ConnectionREST.getConnection().create(ServiceAPPI.class);
 
 
-        _Log.setOnClickListener(new View.OnClickListener() {
+        iniciar_sesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String username = _etUser.getText().toString().trim();
-                String password = _etPasword.getText().toString().trim();
+                String username = user.getText().toString().trim();
+                String passwords = password.getText().toString().trim();
 
-                Usuario usuario = new Usuario(0,"", username, password);
+                Usuario usuario = new Usuario(0,"", username, passwords);
 
              verificar(usuario);
             }

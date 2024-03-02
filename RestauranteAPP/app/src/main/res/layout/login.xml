@@ -1,64 +1,154 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    tools:context=".LoginActivity">
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent" android:layout_height="wrap_content" >
+	<!-- 
+	/*
+	 *	This content is generated from the API File Info.
+	 *	(Alt+Shift+Ctrl+I).
+	 *
+	 *	@desc 		
+	 *	@file 		login
+	 *	@date 		Saturday 02nd of March 2024 12:53:10 AM
+	 *	@title 		Page 1
+	 *	@author 	
+	 *	@keywords 	
+	 *	@generator 	Export Kit v1.3.figma
+	 *
+	 */
+	-->
+	<ScrollView android:id="@+id/login" 
+		android:layout_width="wrap_content" 
+		android:layout_height="match_parent" >
 
-    <ImageView
-        android:id="@+id/imageViewLogo"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="100dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+		<RelativeLayout android:id="@+id/content_container" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" >
 
-    <EditText
-        android:id="@+id/txtUser"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
 
-        android:hint="Username"
-        android:padding="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" />
 
-    <EditText
-        android:id="@+id/txtPassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="32dp"
+			<RelativeLayout android:id="@+id/page_login_ek1"
+				android:layout_marginTop="0dp"
+				android:layout_marginStart="0dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				>
 
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:padding="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtUser" />
+				<View
+					android:id="@+id/_bg__login_ek2"
+					android:layout_width="1280dp"
+					android:layout_height="800dp"
+					android:layout_marginStart="-1dp"
+					android:layout_marginTop="-1dp"
+					android:background="@drawable/_bg__login_ek2_shape" />
 
-    <Button
-        android:id="@+id/buttonLogin"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:background="@color/design_default_color_primary_variant"
-        android:text="Login"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+				<TextView android:id="@+id/login_ek3"
+					android:textStyle="bold|italic"
+					android:textSize="40sp"
+					android:textColor="@color/login_ek3_color"
+					android:layout_marginLeft="501dp"
+					android:layout_marginTop="262dp"
+					android:layout_width="306dp"
+					android:layout_height="107dp"
+					android:text="@string/login_ek3_string"
+					 />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+				<ImageView android:id="@+id/rectangle_1"
+					android:src="@drawable/rectangle_1"
+					android:contentDescription="rectangle_1"
+					 android:layout_marginStart="400dp"
+					android:layout_marginTop="377dp"
+					android:layout_width="400dp"
+					android:layout_height="80dp" />
+
+				<ImageView android:id="@+id/rectangle_2"
+					android:src="@drawable/rectangle_2"
+					android:contentDescription="rectangle_2"
+					 android:layout_marginStart="400dp"
+					android:layout_marginTop="491dp"
+					android:layout_width="400dp"
+					android:layout_height="80dp" />
+
+				<TextView android:id="@+id/usuario_"
+					android:textSize="28sp"
+					android:textColor="@color/login_ek3_color"
+					android:layout_marginLeft="214dp"
+					android:layout_marginTop="400dp"
+					android:layout_width="153.8dp"
+					android:layout_height="80.8dp"
+					android:text="@string/usuario__string"
+					 />
+
+				<TextView android:id="@+id/contrase_a_"
+					android:textSize="28sp"
+					android:textColor="@color/login_ek3_color"
+					android:layout_marginLeft="188dp"
+					android:layout_marginTop="495dp"
+					android:layout_width="208.8dp"
+					android:layout_height="80.8dp"
+					android:text="@string/contrase_a__string"
+					 />
+
+				<EditText
+					android:id="@+id/user"
+					android:textStyle="bold|italic"
+					android:textSize="40sp"
+					android:textColor="@color/user_color"
+					android:layout_marginLeft="439dp"
+					android:layout_marginTop="394dp"
+					android:layout_width="329dp"
+					android:layout_height="72dp"
+					android:hint="@string/user_string" />
+
+
+				<EditText
+					android:id="@+id/password"
+					android:textStyle="bold|italic"
+					android:textSize="40sp"
+					android:textColor="@color/user_color"
+					android:layout_marginLeft="439dp"
+					android:layout_marginTop="507dp"
+					android:layout_width="329dp"
+					android:layout_height="72dp"
+					android:hint="@string/password_string" />
+
+
+
+				<RelativeLayout android:id="@+id/group_1"
+					android:layout_marginTop="622dp"
+					android:layout_marginStart="407dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					>
+
+					<View   android:id="@+id/_bg__group_1_ek1"
+						android:background="@drawable/_bg__group_1_ek1_shape"
+						 android:layout_marginStart="-407dp"
+						android:layout_marginTop="-622dp"
+						android:layout_width="393dp"
+						android:layout_height="100dp" />
+
+					<View   android:id="@+id/rectangle_3"
+						android:background="@drawable/rectangle_3_shape"
+						 android:layout_marginStart="0dp"
+						android:layout_marginTop="0dp"
+						android:layout_width="393dp"
+						android:layout_height="100dp" />
+
+					<Button
+						android:id="@+id/iniciar_sesion"
+						android:layout_width="357dp"
+						android:layout_height="71dp"
+						android:layout_marginLeft="32dp"
+						android:text="@string/iniciar_sesion_string"
+						android:textColor="@color/login_ek3_color"
+						android:textSize="40sp"
+						android:textStyle="bold|italic"
+						android:background="@color/fondo"/>
+
+
+				</RelativeLayout>
+
+			</RelativeLayout>
+		</RelativeLayout>
+
+	</ScrollView>
+</HorizontalScrollView>
