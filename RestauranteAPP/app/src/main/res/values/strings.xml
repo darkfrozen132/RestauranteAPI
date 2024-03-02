@@ -2,7 +2,7 @@
 <resources>
 	<!-- login strings -->
 
-	<string name="app_name">Page 1</string>
+
 	<string name="ek_img_content">ExportKit Image</string>
 	<string name="login_ek3_string">LOGIN</string>
 	<string name="usuario__string">Usuario:</string>
