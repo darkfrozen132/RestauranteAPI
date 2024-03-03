@@ -38,7 +38,7 @@ public class Login extends AppCompatActivity {
     private TextView password;
     private View _bg__group_1_ek1;
     private View rectangle_3;
-    private TextView iniciar_sesion;
+    private Button iniciar_sesion;
 
     private ServiceAPPI serviceAPI;
 
@@ -57,7 +57,7 @@ public class Login extends AppCompatActivity {
         password = (TextView) findViewById(R.id.password);
         _bg__group_1_ek1 = (View) findViewById(R.id._bg__group_1_ek1);
         rectangle_3 = (View) findViewById(R.id.rectangle_3);
-        iniciar_sesion = (TextView) findViewById(R.id.iniciar_sesion);
+        iniciar_sesion = (Button) findViewById(R.id.iniciar_sesion);
 
         serviceAPI = ConnectionREST.getConnection().create(ServiceAPPI.class);
 
