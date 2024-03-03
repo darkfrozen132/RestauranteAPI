@@ -2,6 +2,7 @@ package com.example.restauranteapp.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -85,7 +86,11 @@ public class Login extends AppCompatActivity {
 
                if(response.isSuccessful())
                {
-                      mensaje("LOGEO EXITOSO");
+
+                   Intent intent = new Intent(Login.this, MainActivity.class);
+                   intent.putExtra("MensajeBienvenida","REGRISTRO PRODUCTOS!!!");
+                   startActivity(intent);
+
                }else {
                  mensaje("SU CUENTA NO EXISTE");
                }
