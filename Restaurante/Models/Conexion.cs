@@ -167,6 +167,7 @@ public partial class Conexion : DbContext
                 .HasMaxLength(25)
                 .IsUnicode(false)
                 .HasColumnName("nombre_plato");
+            entity.Property(e => e.TipoPlato).HasColumnName("TipoPlato").HasMaxLength(100);
         });
 
         modelBuilder.Entity<TaTipoCliente>(entity =>
