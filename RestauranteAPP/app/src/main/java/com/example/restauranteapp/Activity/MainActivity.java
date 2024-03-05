@@ -11,9 +11,10 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.restauranteapp.Appi.ServiceAPPIUsuario;
 import com.example.restauranteapp.R;
 
-import  com.example.restauranteapp.Appi.ServiceAPPI;
+
 import com.example.restauranteapp.Models.Usuario;
 import com.example.restauranteapp.R;
 import com.example.restauranteapp.Util.ConnectionREST;
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     private View menu_principal;
 
-    private ServiceAPPI serviceAPI;
+    private ServiceAPPIUsuario serviceAPI;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         mesas=(Button) findViewById(R.id.mesas);
         personal=(Button) findViewById(R.id.personal);
 
-        serviceAPI = ConnectionREST.getConnection().create(ServiceAPPI.class);
+        serviceAPI = ConnectionREST.getConnection().create(ServiceAPPIUsuario.class);
 
         agregar_pedido.setOnClickListener(new View.OnClickListener() {
             @Override
