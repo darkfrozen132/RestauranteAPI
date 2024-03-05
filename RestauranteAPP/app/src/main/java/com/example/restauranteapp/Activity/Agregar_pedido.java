@@ -30,6 +30,7 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.EditText;
 
+import java.lang.ref.Reference;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -49,7 +50,7 @@ public class Agregar_pedido extends AppCompatActivity {
         setContentView(R.layout.agregar_pedido);
 
         edit_mesa = (EditText) findViewById(R.id.edit_mesa);
-        spiner=(Spinner) findViewById(R.id.spiner_platos);
+        spiner = (Spinner) findViewById(R.id.spiner_platos);
         serviceAPI = ConnectionREST.getConnection().create(ServiceAPPIPlato.class);
 
 
@@ -61,31 +62,11 @@ public class Agregar_pedido extends AppCompatActivity {
         });
 
 
-
-
     }
-    public void llamar_platos(){
+
+    public void llamar_platos() {
         Call<List<Plato>> platos = serviceAPI.listProduct();
-        call.enqueue(new Callback<List<String>>() {
-            @Override
-            public void onResponse(Call<List<String>> call, Response<List<String>> response) {
-                if (response.isSuccessful()) {
-                    List<String> elementos = response.body();
 
-                    // Configura el ArrayAdapter con los datos obtenidos
-                    ArrayAdapter<String> adapter = new ArrayAdapter<>(context, android.R.layout.simple_spinner_item, elementos);
-                    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-                    // Establece el adaptador en el Spinner
-                    spinner.setAdapter(adapter);
-                } else {
-                    // Manejar errores de la respuesta del servicio web
-                }
-            }
-
-            @Override
-            public void onFailure(Call<List<String>> call, Throwable t) {
-                // Manejar errores de la solicitud HTTP
-            }
     }
 }
