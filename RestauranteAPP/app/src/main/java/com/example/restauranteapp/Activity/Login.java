@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.restauranteapp.R;
 
-import  com.example.restauranteapp.Appi.ServiceAPPI;
+import  com.example.restauranteapp.Appi.ServiceAPPIUsuario;
 import com.example.restauranteapp.Models.Usuario;
 import com.example.restauranteapp.R;
 import com.example.restauranteapp.Util.ConnectionREST;
@@ -40,7 +40,7 @@ public class Login extends AppCompatActivity {
     private View rectangle_3;
     private Button iniciar_sesion;
 
-    private ServiceAPPI serviceAPI;
+    private ServiceAPPIUsuario serviceAPI;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +59,7 @@ public class Login extends AppCompatActivity {
         rectangle_3 = (View) findViewById(R.id.rectangle_3);
         iniciar_sesion = (Button) findViewById(R.id.iniciar_sesion);
 
-        serviceAPI = ConnectionREST.getConnection().create(ServiceAPPI.class);
+        serviceAPI = ConnectionREST.getConnection().create(ServiceAPPIUsuario.class);
 
 
         iniciar_sesion.setOnClickListener(new View.OnClickListener() {

@@ -11,9 +11,10 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.restauranteapp.Models.Plato;
 import com.example.restauranteapp.R;
 
-import  com.example.restauranteapp.Appi.ServiceAPPI;
+import  com.example.restauranteapp.Appi.ServiceAPPIPlato;
 import com.example.restauranteapp.Models.Usuario;
 import com.example.restauranteapp.R;
 import com.example.restauranteapp.Util.ConnectionREST;
@@ -39,7 +40,7 @@ public class Agregar_pedido extends AppCompatActivity {
     private EditText edit_mesa;
 
     private Spinner spiner;
-    private ServiceAPPI serviceAPI;
+    private ServiceAPPIPlato serviceAPI;
 
 
     @Override
@@ -49,7 +50,7 @@ public class Agregar_pedido extends AppCompatActivity {
 
         edit_mesa = (EditText) findViewById(R.id.edit_mesa);
         spiner=(Spinner) findViewById(R.id.spiner_platos);
-        serviceAPI = ConnectionREST.getConnection().create(ServiceAPPI.class);
+        serviceAPI = ConnectionREST.getConnection().create(ServiceAPPIPlato.class);
 
 
         edit_mesa.setOnClickListener(new View.OnClickListener() {
@@ -64,7 +65,7 @@ public class Agregar_pedido extends AppCompatActivity {
 
     }
     public void llamar_platos(){
-        Call<List<Usuario>> platos = serviceAPI.listProduct();
+        Call<List<Plato>> platos = serviceAPI.listProduct();
         call.enqueue(new Callback<List<String>>() {
             @Override
             public void onResponse(Call<List<String>> call, Response<List<String>> response) {

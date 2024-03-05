@@ -1,5 +1,5 @@
 package com.example.restauranteapp.Appi;
-import com.example.restauranteapp.Models.Usuario;
+import com.example.restauranteapp.Models.Pedido;
 import java.util.List;
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -10,17 +10,17 @@ import retrofit2.http.PUT;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 
-public interface ServiceAPPI {
-    @GET("usuario")
-    public abstract Call<List<Usuario>> listProduct();
-    @POST("usuario/agregar")
-    public abstract Call<Usuario> add(@Body Usuario obj);
-    @PUT("usuario/modificar")
-    public abstract Call<Usuario> put(@Body Usuario obj);
-    @DELETE("usuario/eliminar/{id}")
-    public abstract Call<Usuario> delete(@Path("id") int id);
-    @POST("usuario/verificar")
+public interface ServiceAPPIPedido {
+    @GET("pedido")
+    public abstract Call<List<Pedido>> listProduct();
+    @POST("pedido/agregar")
+    public abstract Call<Pedido> add(@Body Pedido obj);
+    @PUT("pedido/modificar")
+    public abstract Call<Pedido> put(@Body Pedido obj);
+    @DELETE("pedido/eliminar/{id}")
+    public abstract Call<Pedido> delete(@Path("id") int id);
+    @POST("pedido/verificar")
     //public  abstract   Call<Void> verificacion(@Body Usuario obj);
-    public abstract Call<Void> verificacion(@Body Usuario obj);
+    public abstract Call<Void> verificacion(@Body Pedido obj);
 
 }

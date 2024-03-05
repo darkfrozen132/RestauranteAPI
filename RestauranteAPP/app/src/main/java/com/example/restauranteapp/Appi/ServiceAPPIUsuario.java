@@ -10,7 +10,7 @@ import retrofit2.http.PUT;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 
-public interface ServiceAPPI {
+public interface ServiceAPPIUsuario {
     @GET("usuario")
     public abstract Call<List<Usuario>> listProduct();
     @POST("usuario/agregar")
