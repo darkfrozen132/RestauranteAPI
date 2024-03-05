@@ -22,4 +22,5 @@ public interface ServiceAPPI {
     @POST("usuario/verificar")
     //public  abstract   Call<Void> verificacion(@Body Usuario obj);
     public abstract Call<Void> verificacion(@Body Usuario obj);
+
 }
