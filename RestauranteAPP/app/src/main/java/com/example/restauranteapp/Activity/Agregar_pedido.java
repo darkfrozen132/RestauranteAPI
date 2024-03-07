@@ -69,4 +69,25 @@ public class Agregar_pedido extends AppCompatActivity {
 
 
     }
+
+    public void mensaje(String msg)
+    {
+        AlertDialog.Builder alerta = new AlertDialog.Builder(this);
+        alerta.setMessage(msg);
+        alerta.show();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

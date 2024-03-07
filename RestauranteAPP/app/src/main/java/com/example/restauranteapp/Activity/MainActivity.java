@@ -56,10 +56,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Agregar_pedido.class);
-                intent.putExtra("MensajeBienvenida", "REGISTRO PRODUCTOS!!!");
+
                 startActivity(intent);
             }
         });
+         mesas.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent intent = new Intent(MainActivity.this, mesas.class);
 
+                 startActivity(intent);
+             }
+         });
     }
 }
