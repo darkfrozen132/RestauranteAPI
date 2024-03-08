@@ -130,7 +130,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -146,8 +146,7 @@
               "RelativeToolTip": "Models\\TaTipoCliente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T20:07:58.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-03T20:07:58.074Z"
             },
             {
               "$type": "Document",
@@ -171,8 +170,7 @@
               "RelativeToolTip": "Models\\TaCliente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T19:26:49.232Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-03T19:26:49.232Z"
             },
             {
               "$type": "Document",
@@ -196,8 +194,7 @@
               "RelativeToolTip": "Models\\Conexion.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T01:59:41.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-29T01:59:41.413Z"
             },
             {
               "$type": "Document",
@@ -225,6 +222,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TaMesa.cs",
+              "DocumentMoniker": "C:\\Users\\51922\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Models\\TaMesa.cs",
+              "RelativeDocumentMoniker": "Models\\TaMesa.cs",
+              "ToolTip": "C:\\Users\\51922\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Models\\TaMesa.cs*",
+              "RelativeToolTip": "Models\\TaMesa.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-29T02:12:39.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
               "Title": "UsuarioRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\51922\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Service\\UsuarioRepositorio.cs",
@@ -234,19 +244,6 @@
               "ViewState": "AQIAAAUAAAAAAAAAAAAAwAQAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-27T23:23:08.46Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TaMesa.cs",
-              "DocumentMoniker": "C:\\Users\\51922\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Models\\TaMesa.cs",
-              "RelativeDocumentMoniker": "Models\\TaMesa.cs",
-              "ToolTip": "C:\\Users\\51922\\Documents\\GitHub\\RestauranteAPI\\Restaurante\\Models\\TaMesa.cs",
-              "RelativeToolTip": "Models\\TaMesa.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T02:12:39.822Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
