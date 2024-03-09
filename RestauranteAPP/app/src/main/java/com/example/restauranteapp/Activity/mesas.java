@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -23,8 +26,10 @@ import retrofit2.Response;
 public class mesas extends AppCompatActivity {
 
    private Spinner spiner;
-    private ServiceAPPIMesas serviceAPI ;
 
+   private EditText editText;
+    private ServiceAPPIMesas serviceAPI ;
+    private List<Mesas> mesasList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,10 +37,29 @@ public class mesas extends AppCompatActivity {
 
         spiner = (Spinner) findViewById(R.id.spiner_mesas);
         serviceAPI = ConnectionREST.getConnection().create(ServiceAPPIMesas.class);
-
+       editText = (EditText) findViewById(R.id.editTextTextMultiLine);
 
       spinner();
 
+        spiner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (position > 0) {
+                    Mesas mesaSeleccionada = mesasList.get(position - 1);
+                    String detallesMesa = "Cantidad de Asientos: " + mesaSeleccionada.getCantidadAsientos() + "\n\n"
+                            + "Descripcion :"  + mesaSeleccionada.getDescripcion() + "\n\n"+"Reservado : " + mesaSeleccionada.getReservado();
+                    editText.setText(detallesMesa);
+                } else {
+                    editText.setText("");
+                }
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                    mensaje("ERROR");
+            }
+        });
 
 
     }
@@ -50,11 +74,13 @@ public class mesas extends AppCompatActivity {
        public void onResponse(Call<List<Mesas>> call, Response<List<Mesas>> response) {
            if(response.isSuccessful())
            {
+               mesasList = response.body();
                List<Mesas> respuesta = response.body();
                List<String> idsMesas = new ArrayList<>();
-
+                  idsMesas.add("(SELECCIONAR)");
                for(Mesas x:respuesta)
                {
+
                    idsMesas.add(String.valueOf(x.getIdMesa()));
                }
               ArrayAdapter<String> adapter = new ArrayAdapter<>(mesas.this, android.R.layout.simple_spinner_item, idsMesas);
