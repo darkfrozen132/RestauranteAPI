@@ -14,38 +14,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="286dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:text="NUMERO DE MESA:"
+        android:textColor="@color/login_ek3_color"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Spinner
-        android:id="@+id/spiner_platos"
-        android:layout_width="347dp"
-        android:layout_height="102dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="194dp"
+        android:id="@+id/spinner_mesa"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="36dp"
         android:background="@color/login_ek3_color"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="123dp"
-        android:layout_marginTop="138dp"
-        android:text="NUMERO DE MESA:"
+        android:id="@+id/textView_mesa"
+        android:layout_width="531dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="620dp"
+        android:layout_marginTop="28dp"
         android:textColor="@color/login_ek3_color"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/edit_mesa"
-        android:layout_width="268dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="292dp"
-        android:layout_marginTop="128dp"
-        android:ems="10"
-        android:hint="Ingrese el numero de la mesa"
-        android:inputType="number"
-        android:textColor="@color/login_ek3_color"
-        android:textColorHint="@color/login_ek3_color"
+        android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
