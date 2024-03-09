@@ -47,7 +47,7 @@ public class Agregar_pedido extends AppCompatActivity {
     private Spinner spiner_mesa;
     private ServiceAPPIPlato serviceAPI;
 
-
+    private Button boton_atras;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,7 +56,7 @@ public class Agregar_pedido extends AppCompatActivity {
         //edit_mesa = (EditText) findViewById(R.id.edit_mesa);
         spiner_mesa = (Spinner) findViewById(R.id.spinner_mesa);
         serviceAPI = ConnectionREST.getConnection().create(ServiceAPPIPlato.class);
-
+        boton_atras=(Button) findViewById(R.id.btn_atras);
         textView =(TextView) findViewById(R.id.textView_mesa);
 
         spinner_mesas();
@@ -77,6 +77,13 @@ public class Agregar_pedido extends AppCompatActivity {
 
 
         });
+        boton_atras.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                    onBackPressed();
+            }
+        });
+
 
     }
     public  void spinner_mesas()
