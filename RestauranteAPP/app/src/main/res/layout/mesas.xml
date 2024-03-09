@@ -9,7 +9,6 @@
         android:id="@+id/view"
         android:layout_width="1338dp"
         android:layout_height="800dp"
-        android:layout_marginStart="4dp"
         android:background="@drawable/_bg__login_ek2_shape"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
