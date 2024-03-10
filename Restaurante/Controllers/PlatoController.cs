@@ -20,6 +20,7 @@ namespace Restaurante.Controllers
         {
             return Ok(_plato.GetPlato());
         }
+        [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
             var obj = _plato.ObtenerPorid(id);
@@ -51,20 +52,6 @@ namespace Restaurante.Controllers
             _plato.modificar(obj);
             return CreatedAtAction(nameof(put), obj);
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }

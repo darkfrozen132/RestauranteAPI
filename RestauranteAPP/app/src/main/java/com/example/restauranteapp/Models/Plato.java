@@ -1,6 +1,7 @@
 package com.example.restauranteapp.Models;
 
-import java.text.DecimalFormat;
+import java.math.BigDecimal;
+
 
 public class Plato {
 
@@ -8,13 +9,13 @@ public class Plato {
 
   private String nombrePlato;
 
-  private DecimalFormat costo;
+  private BigDecimal costo;
 
   private int disponible;
 
   private String tipoPlato;
 
-    public Plato(int idPlato, String nombrePlato, DecimalFormat costo, int disponible, String tipoPlato) {
+    public Plato(int idPlato, String nombrePlato, BigDecimal costo, int disponible, String tipoPlato) {
         this.idPlato = idPlato;
         this.nombrePlato = nombrePlato;
         this.costo = costo;
@@ -38,11 +39,11 @@ public class Plato {
         this.nombrePlato = nombrePlato;
     }
 
-    public DecimalFormat getCosto() {
+    public BigDecimal getCosto() {
         return costo;
     }
 
-    public void setCosto(DecimalFormat costo) {
+    public void setCosto(BigDecimal costo) {
         this.costo = costo;
     }
 
