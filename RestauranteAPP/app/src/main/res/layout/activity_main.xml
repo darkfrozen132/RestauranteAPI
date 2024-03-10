@@ -11,6 +11,8 @@
         android:id="@+id/vista_menu_principal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/_bg__login_ek2_shape"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -94,8 +96,8 @@
         android:layout_width="287dp"
         android:layout_height="120dp"
 
-        android:layout_marginStart="497dp"
-        android:layout_marginTop="399dp"
+        android:layout_marginStart="496dp"
+        android:layout_marginTop="396dp"
         android:background="@color/login_ek3_color"
         android:gravity="center"
         android:text="MESAS"

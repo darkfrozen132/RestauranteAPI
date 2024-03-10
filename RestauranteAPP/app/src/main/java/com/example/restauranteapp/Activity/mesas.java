@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.GridLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -29,76 +31,58 @@ public class mesas extends AppCompatActivity {
 
    private EditText editText;
     private ServiceAPPIMesas serviceAPI ;
+
+    private Button btnEliminar;
     private List<Mesas> mesasList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mesas);
 
-        spiner = (Spinner) findViewById(R.id.spiner_mesas);
-        serviceAPI = ConnectionREST.getConnection().create(ServiceAPPIMesas.class);
-       editText = (EditText) findViewById(R.id.editTextTextMultiLine);
 
-      spinner();
-
-        spiner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (position > 0) {
-                    Mesas mesaSeleccionada = mesasList.get(position - 1);
-                    String detallesMesa = "Cantidad de Asientos: " + mesaSeleccionada.getCantidadAsientos() + "\n\n"
-                            + "Descripcion :"  + mesaSeleccionada.getDescripcion() + "\n\n"+"Reservado : " + mesaSeleccionada.getReservado();
-                    editText.setText(detallesMesa);
-                } else {
-                    editText.setText("");
-                }
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-                    mensaje("ERROR");
-            }
-        });
+obtenerMesasDeAPI();
 
 
     }
 
-    public  void spinner()
-    {
-    ServiceAPPIMesas serviceAPPIMesas =ConnectionREST.getConnection().create(ServiceAPPIMesas.class);
-    Call<List<Mesas>> call =serviceAPPIMesas.listProduct();
+    private void obtenerMesasDeAPI() {
+        ServiceAPPIMesas serviceAPPIMesas = ConnectionREST.getConnection().create(ServiceAPPIMesas.class);
+        Call<List<Mesas>> call = serviceAPPIMesas.listProduct();
 
-    call.enqueue(new Callback<List<Mesas>>() {
-       @Override
-       public void onResponse(Call<List<Mesas>> call, Response<List<Mesas>> response) {
-           if(response.isSuccessful())
-           {
-               mesasList = response.body();
-               List<Mesas> respuesta = response.body();
-               List<String> idsMesas = new ArrayList<>();
-                  idsMesas.add("(SELECCIONAR)");
-               for(Mesas x:respuesta)
-               {
+        call.enqueue(new Callback<List<Mesas>>() {
+            @Override
+            public void onResponse(Call<List<Mesas>> call, Response<List<Mesas>> response) {
+                if (response.isSuccessful()) {
+                    mesasList = response.body();
 
-                   idsMesas.add(String.valueOf(x.getIdMesa()));
-               }
-              ArrayAdapter<String> adapter = new ArrayAdapter<>(mesas.this, android.R.layout.simple_spinner_item, idsMesas);
-               adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    // Llama al método para crear los botones de mesa basados en la lista de mesas obtenida
+                    crearBotones();
+                } else {
+                    Toast.makeText(mesas.this, "Error al obtener las mesas", Toast.LENGTH_LONG).show();
+                }
+            }
 
-               spiner.setAdapter(adapter);
-           }
-           else
-           {
-               Toast.makeText(null,"Error", Toast.LENGTH_LONG).show();
-           }
-       }
-       @Override
-       public void onFailure(Call<List<Mesas>> call, Throwable t) {
-           Toast.makeText(null,"Ocurrop un error", Toast.LENGTH_LONG).show();
-       }
-   });
+            @Override
+            public void onFailure(Call<List<Mesas>> call, Throwable t) {
+                Toast.makeText(mesas.this, "Ocurrió un error al obtener las mesas", Toast.LENGTH_LONG).show();
+            }
+        });
 
+    }
+
+
+
+    private void crearBotones() {
+        GridLayout gridLayout = findViewById(R.id.gridLayout);
+        
+        for (Mesas mesa : mesasList) {
+            Button mesaButton = new Button(this);
+            mesaButton.setText("Mesa " + mesa.getIdMesa());
+            mesaButton.setId(mesa.getIdMesa());
+
+
+            gridLayout.addView(mesaButton);
+        }
     }
 
     public void mensaje(String msg)
