@@ -7,12 +7,17 @@ public class Mesas {
   private String descripcion;
   private int reservado;
 
+   private  int dleft;
 
-    public Mesas(int idMesa, int cantidadAsientos, String descripcion, int reservado) {
+   private int dup;
+
+    public Mesas(int idMesa, int cantidadAsientos, String descripcion, int reservado, int dleft, int dup) {
         this.idMesa = idMesa;
         this.cantidadAsientos = cantidadAsientos;
         this.descripcion = descripcion;
         this.reservado = reservado;
+        this.dleft = dleft;
+        this.dup = dup;
     }
 
     public int getIdMesa() {
@@ -46,4 +51,22 @@ public class Mesas {
     public void setReservado(int reservado) {
         this.reservado = reservado;
     }
+
+    public int getDleft() {
+        return dleft;
+    }
+
+    public void setDleft(int dleft) {
+        this.dleft = dleft;
+    }
+
+    public int getDup() {
+        return dup;
+    }
+
+    public void setDup(int dup) {
+        this.dup = dup;
+    }
 }
+
+

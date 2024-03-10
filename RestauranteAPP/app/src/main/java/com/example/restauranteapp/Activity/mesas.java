@@ -3,8 +3,11 @@ package com.example.restauranteapp.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -72,18 +75,65 @@ obtenerMesasDeAPI();
 
 
 
+    private int offsetX, offsetY;
+
     private void crearBotones() {
         GridLayout gridLayout = findViewById(R.id.gridLayout);
-        
-        for (Mesas mesa : mesasList) {
-            Button mesaButton = new Button(this);
-            mesaButton.setText("Mesa " + mesa.getIdMesa());
-            mesaButton.setId(mesa.getIdMesa());
 
+        for (final Mesas mesa : mesasList) {
+            final Button mesaButton = new Button(this);
+            mesaButton.setText("Mesa " + mesa.getIdMesa());
+
+            // Verificar la disponibilidad de la mesa y establecer el color de fondo
+            if (mesa.getReservado() == 0) {
+                // Mesa libre
+                mesaButton.setBackgroundColor(Color.GREEN);
+            } else {
+                // Mesa ocupada
+                mesaButton.setBackgroundColor(Color.RED);
+            }
+
+            mesaButton.setId(mesa.getIdMesa());
+            int buttonWidth = 250;
+            int buttonHeight = 250;
+            mesaButton.setLayoutParams(new GridLayout.LayoutParams(
+                    new ViewGroup.LayoutParams(buttonWidth, buttonHeight)
+            ));
+
+            // Configurar los márgenes para cada botón
+            GridLayout.LayoutParams params = (GridLayout.LayoutParams) mesaButton.getLayoutParams();
+            params.setMargins(16, 16, 16, 16); // (left, top, right, bottom)
+            mesaButton.setLayoutParams(params);
+
+            // Obtener las posiciones iniciales de las mesas
+            final int initialLeft = mesa.getDleft();
+            final int initialTop = mesa.getDup();
+
+            mesaButton.setOnTouchListener(new View.OnTouchListener() {
+                @Override
+                public boolean onTouch(View v, MotionEvent event) {
+                    final int X = (int) event.getRawX();
+                    final int Y = (int) event.getRawY();
+                    switch (event.getAction() & MotionEvent.ACTION_MASK) {
+                        case MotionEvent.ACTION_DOWN:
+                            // Guardar las posiciones iniciales de X e Y
+                            offsetX = X + initialLeft;
+                            offsetY = Y + initialTop;
+                            break;
+                        case MotionEvent.ACTION_MOVE:
+                            // Actualizar las posiciones de X e Y mientras se mueve el botón
+                            mesaButton.setX(X - offsetX);
+                            mesaButton.setY(Y - offsetY);
+                            break;
+                    }
+                    return true;
+                }
+            });
 
             gridLayout.addView(mesaButton);
         }
     }
+
 
     public void mensaje(String msg)
     {
