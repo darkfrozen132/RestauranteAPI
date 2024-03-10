@@ -73,6 +73,8 @@ public partial class Conexion : DbContext
                 .IsUnicode(false)
                 .HasColumnName("descripcion");
             entity.Property(e => e.Reservado).HasColumnName("reservado");
+            entity.Property(e => e.DLeft).HasColumnName("DLeft");
+            entity.Property(e => e.DUp).HasColumnName("DUp");
         });
 
         modelBuilder.Entity<TaPedido>(entity =>
