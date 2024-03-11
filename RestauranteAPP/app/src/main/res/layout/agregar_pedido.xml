@@ -73,9 +73,60 @@
         android:id="@+id/btn_atras"
         android:layout_width="166dp"
         android:layout_height="176dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="544dp"
+        android:layout_marginStart="984dp"
+        android:layout_marginTop="36dp"
         android:drawableLeft="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="390dp"
+        android:layout_height="258dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="312dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/checkboxContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_aceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="656dp"
+        android:background="@drawable/_bg__login_ek2_shape"
+        android:text="ACEPTAR"
+        android:textColor="@color/login_ek3_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_limpiar"
+        android:layout_width="77dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="665dp"
+        android:text="Limpiar"
+        android:textColor="@color/login_ek3_color"
+        android:background="@drawable/_bg__login_ek2_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_resumen"
+        android:layout_width="299dp"
+        android:layout_height="252dp"
+        android:layout_marginStart="766dp"
+        android:layout_marginTop="293dp"
+        android:editable="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

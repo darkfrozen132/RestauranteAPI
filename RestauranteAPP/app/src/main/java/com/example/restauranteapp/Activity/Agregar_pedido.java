@@ -1,17 +1,22 @@
 package com.example.restauranteapp.Activity;
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
+import android.graphics.Color;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -53,6 +58,15 @@ public class Agregar_pedido extends AppCompatActivity {
     private Spinner spiner_tipo;
     private Button boton_atras;
     private TextView seleccionar_tipo;
+    private TextView scrollView;
+
+    private LinearLayout checkbox_container;
+
+    private String tipo_plato;
+
+    private Button aceptar;
+    private Button limpiar;
+    private TextView summary;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,10 +79,13 @@ public class Agregar_pedido extends AppCompatActivity {
         textView =(TextView) findViewById(R.id.textView_mesa);
         spiner_tipo=(Spinner) findViewById(R.id.spinner_tipo);
         seleccionar_tipo=(TextView) findViewById(R.id.textView_mesa);
+        checkbox_container  =(LinearLayout) findViewById(R.id.checkboxContainer);
+        limpiar= (Button) findViewById(R.id.btn_limpiar);
+        aceptar=(Button) findViewById(R.id.btn_aceptar);
+        summary =(TextView) findViewById(R.id.text_resumen);
         spinner_mesas();
 
 
-        spinner_tipo();
         spiner_mesa.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
@@ -84,6 +101,7 @@ public class Agregar_pedido extends AppCompatActivity {
 
 
         });
+        spinner_tipo();
 
 
 
@@ -93,6 +111,49 @@ public class Agregar_pedido extends AppCompatActivity {
                     onBackPressed();
             }
         });
+        aceptar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Crear una nueva cadena para guardar el estado anterior
+                String textoCheckBoxesAnterior = summary.getText().toString();
+
+                StringBuilder textoCheckBoxesNuevo = new StringBuilder();
+
+                // Iterar a través de todos los CheckBoxes presentes en el contenedor
+                for (int i = 0; i < checkbox_container.getChildCount(); i++) {
+                    View view = checkbox_container.getChildAt(i);
+                    if (view instanceof CheckBox) {
+                        CheckBox checkBox = (CheckBox) view;
+                        // Verificar si el CheckBox está seleccionado
+                        if (checkBox.isChecked()) {
+                            // Agregar el texto del CheckBox seleccionado al StringBuilder
+                            textoCheckBoxesNuevo.append(checkBox.getText()).append("\n");
+                        }
+                    }
+                }
+
+                // Mostrar los textos de los CheckBoxes seleccionados en el TextView
+                summary.setText(textoCheckBoxesNuevo.toString());
+
+                // Aquí puedes comparar textoCheckBoxesAnterior con textoCheckBoxesNuevo según lo que necesites
+                // por ejemplo, si deseas saber si ha habido un cambio en las selecciones de CheckBoxes
+                if (!textoCheckBoxesAnterior.equals(textoCheckBoxesNuevo.toString())) {
+                    // Ha habido cambios en las selecciones de CheckBoxes
+                    // Puedes realizar las acciones necesarias aquí
+                }
+            }
+        });
+        limpiar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Limpiar todos los CheckBoxes del contenedor
+                checkbox_container.removeAllViews();
+            }
+        });
+
+
+
+
 
 
     }
@@ -187,7 +248,7 @@ public class Agregar_pedido extends AppCompatActivity {
 
             @Override
             public void onResponse(Call<List<Plato>> call1, Response<List<Plato>> response1) {
-                    mensaje(String.valueOf(response1.code()));
+
                 if(response1.isSuccessful())
                 {
 
@@ -199,7 +260,7 @@ public class Agregar_pedido extends AppCompatActivity {
                     {
                         String tipoPlato = x.getTipoPlato();
                         if(!tipos.contains(tipoPlato))
-                        tipos.add(x.getTipoPlato());
+                            tipos.add(x.getTipoPlato());
 
                     }
 
@@ -208,6 +269,20 @@ public class Agregar_pedido extends AppCompatActivity {
                     adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
                     spiner_tipo.setAdapter(adapter);
+                    spiner_tipo.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                        @Override
+                        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                            // Obtener la opción seleccionada
+                            tipo_plato  = parent.getItemAtPosition(position).toString();
+                            crear_checkbox(tipo_plato);
+
+                        }
+                        @Override
+                        public void onNothingSelected(AdapterView<?> parent) {
+                            // Método requerido pero no necesitamos hacer nada aquí en este ejemplo
+                        }
+                    });
+
                 }
                 else
                 {
@@ -216,12 +291,61 @@ public class Agregar_pedido extends AppCompatActivity {
             }
             @Override
             public void onFailure(Call<List<Plato>> call, Throwable t) {
-                mensaje(t.getMessage());
+
                 Toast.makeText(Agregar_pedido.this,"Ocurrop un error", Toast.LENGTH_LONG).show();
             }
         });
 
     }
+    public void crear_checkbox(String tipo_plato){
+        ServiceAPPIPlato serviceAPPIPlatos =ConnectionREST.getConnection().create(ServiceAPPIPlato.class);
+
+        Call<List<Plato>> call1 =serviceAPPIPlatos.listProduct();
+
+
+        call1.enqueue(new Callback<List<Plato>>() {
+
+            @Override
+            public void onResponse(Call<List<Plato>> call1, Response<List<Plato>> response1) {
+
+                if (response1.isSuccessful()) {
+
+                    List<Plato> respuesta = response1.body();
+                    List<String> tipos = new ArrayList<>();
+                    checkbox_container.removeAllViews();
+
+
+                    for (Plato x : respuesta) {
+                        String tipoPlato = x.getTipoPlato();
+                        if (tipo_plato != null && tipoPlato.equals(tipo_plato)) {
+
+                            CheckBox checkBox = new CheckBox(Agregar_pedido.this);
+                            checkBox.setText(x.getNombrePlato());
+                            checkBox.setTextColor(Color.YELLOW);
+                            // Agregar un ID único para cada CheckBox (opcional)
+                            checkBox.setId(x.getIdPlato());
+
+                            // Agregar los CheckBoxes al contenedor
+                            checkbox_container.addView(checkBox);
+
+                        }
+                    }
+                }
+                else
+                    {
+                        Toast.makeText(Agregar_pedido.this, "Error", Toast.LENGTH_LONG).show();
+                    }
+
+            }
+            @Override
+            public void onFailure(Call<List<Plato>> call, Throwable t) {
+
+                Toast.makeText(Agregar_pedido.this,"Ocurrop un error", Toast.LENGTH_LONG).show();
+            }
+        });
+
+    }
+
 
     public void mensaje(String msg)
     {
