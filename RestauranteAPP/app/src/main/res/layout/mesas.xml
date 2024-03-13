@@ -13,18 +13,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <GridLayout
+
+    <FrameLayout
         android:id="@+id/gridLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="1269dp"
+        android:layout_height="794dp"
         android:layout_centerInParent="true"
-        android:columnCount="3"
-        android:rowCount="3"
-        android:padding="16dp"
+        android:layout_marginBottom="4dp"
         android:alignmentMode="alignMargins"
+        android:columnCount="3"
         android:columnOrderPreserved="false"
         android:orientation="horizontal"
-        android:useDefaultMargins="true" />
+        android:padding="16dp"
+        android:rowCount="3"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-4dp">
+
+        <Spinner
+            android:id="@+id/spinnerPisos"
+            android:layout_width="264dp"
+            android:layout_height="76dp"
+            android:layout_margin="16dp" />
+
+        <ImageView
+            android:id="@+id/mesaImageView"
+            android:layout_width="41dp"
+            android:layout_height="29dp"
+            android:src="@drawable/libre" />
+
+
+    </FrameLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

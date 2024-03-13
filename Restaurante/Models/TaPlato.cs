@@ -13,7 +13,7 @@ public partial class TaPlato
 
     public int Disponible { get; set; }
 
-    public string TipoPlato { get; set; }
+    public string TipoPlato { get; set; }=null!;
 
     public virtual ICollection<TaPedidoDetalle> TaPedidoDetalles { get; set; } = new List<TaPedidoDetalle>();
 }

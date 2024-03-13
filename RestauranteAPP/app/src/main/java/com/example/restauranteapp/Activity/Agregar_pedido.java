@@ -1,9 +1,12 @@
 package com.example.restauranteapp.Activity;
+import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -47,7 +50,9 @@ public class Agregar_pedido extends AppCompatActivity {
     private Spinner spiner_mesa;
     private ServiceAPPIPlato serviceAPI;
 
+    private Spinner spiner_tipo;
     private Button boton_atras;
+    private TextView seleccionar_tipo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,10 +63,12 @@ public class Agregar_pedido extends AppCompatActivity {
         serviceAPI = ConnectionREST.getConnection().create(ServiceAPPIPlato.class);
         boton_atras=(Button) findViewById(R.id.btn_atras);
         textView =(TextView) findViewById(R.id.textView_mesa);
-
+        spiner_tipo=(Spinner) findViewById(R.id.spinner_tipo);
+        seleccionar_tipo=(TextView) findViewById(R.id.textView_mesa);
         spinner_mesas();
 
 
+        spinner_tipo();
         spiner_mesa.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
@@ -77,6 +84,9 @@ public class Agregar_pedido extends AppCompatActivity {
 
 
         });
+
+
+
         boton_atras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -162,6 +172,52 @@ public class Agregar_pedido extends AppCompatActivity {
             @Override
             public void onFailure(Call<List<Mesas>> call, Throwable t) {
                 Toast.makeText(null,"Ocurrop un error", Toast.LENGTH_LONG).show();
+            }
+        });
+
+    }
+    public void spinner_tipo(){
+
+        ServiceAPPIPlato serviceAPPIPlatos =ConnectionREST.getConnection().create(ServiceAPPIPlato.class);
+
+        Call<List<Plato>> call1 =serviceAPPIPlatos.listProduct();
+
+
+        call1.enqueue(new Callback<List<Plato>>() {
+
+            @Override
+            public void onResponse(Call<List<Plato>> call1, Response<List<Plato>> response1) {
+                    mensaje(String.valueOf(response1.code()));
+                if(response1.isSuccessful())
+                {
+
+                    List<Plato> respuesta = response1.body();
+                    List<String> tipos = new ArrayList<>();
+                    tipos.add("Seleccionar");
+
+                    for(Plato x:respuesta)
+                    {
+                        String tipoPlato = x.getTipoPlato();
+                        if(!tipos.contains(tipoPlato))
+                        tipos.add(x.getTipoPlato());
+
+                    }
+
+
+                    ArrayAdapter<String> adapter = new ArrayAdapter<>(Agregar_pedido.this, android.R.layout.simple_spinner_item, tipos);
+                    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+                    spiner_tipo.setAdapter(adapter);
+                }
+                else
+                {
+                    Toast.makeText(Agregar_pedido.this,"Error", Toast.LENGTH_LONG).show();
+                }
+            }
+            @Override
+            public void onFailure(Call<List<Plato>> call, Throwable t) {
+                mensaje(t.getMessage());
+                Toast.makeText(Agregar_pedido.this,"Ocurrop un error", Toast.LENGTH_LONG).show();
             }
         });
 
