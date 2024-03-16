@@ -3,6 +3,7 @@ package com.example.restauranteapp.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -50,7 +51,8 @@ public class mesas extends AppCompatActivity {
 
         spinerPisos = findViewById(R.id.spinnerPisos);
 
-obtenerMesasDeAPI();
+    obtenerMesasDeAPI();
+
 
 serviceAPI = ConnectionREST.getConnection().create(ServiceAPPIMesas.class);
 
@@ -201,10 +203,30 @@ serviceAPI = ConnectionREST.getConnection().create(ServiceAPPIMesas.class);
                             return false;
                         }
                     }
+
                 });
+
+                mesaButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v){
+                        if(!modificarMesas && mesa.getReservado()==0){
+                            int id_mesa=mesa.getIdMesa();
+                            Intent intent = new Intent(mesas.this, Agregar_pedido.class);
+                            intent.putExtra("ID_MESA",id_mesa);
+
+                            startActivity(intent);
+                        }
+                        else if ( !modificarMesas && mesa.getReservado()==1){
+                            mensaje("No se puede seleccionar la mesa");
+                        }
+                    }
+
+                });
+
                 frameLayout.addView(mesaButton);
             }
         }
+
 
         final Button modificarMesasButton = new Button(this);
         modificarMesasButton.setText("Modificar mesas");
@@ -226,7 +248,12 @@ serviceAPI = ConnectionREST.getConnection().create(ServiceAPPIMesas.class);
             }
         });
 
+
         frameLayout.addView(modificarMesasButton);
+
+
+
+
     }
 
 

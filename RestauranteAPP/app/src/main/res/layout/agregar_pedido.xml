@@ -39,16 +39,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/spinner_mesa"
-        android:layout_width="275dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="328dp"
-        android:layout_marginTop="36dp"
-        android:background="@color/login_ek3_color"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Spinner
         android:id="@+id/spinner_tipo"
         android:layout_width="275dp"
         android:layout_height="48dp"
@@ -96,30 +86,6 @@
         </LinearLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/btn_aceptar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="340dp"
-        android:layout_marginTop="656dp"
-        android:background="@drawable/_bg__login_ek2_shape"
-        android:text="ACEPTAR"
-        android:textColor="@color/login_ek3_color"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_limpiar"
-        android:layout_width="77dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="135dp"
-        android:layout_marginTop="665dp"
-        android:text="Limpiar"
-        android:textColor="@color/login_ek3_color"
-        android:background="@drawable/_bg__login_ek2_shape"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/text_resumen"
         android:layout_width="299dp"
@@ -127,6 +93,17 @@
         android:layout_marginStart="766dp"
         android:layout_marginTop="293dp"
         android:editable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mesa"
+        android:layout_width="133dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="325dp"
+        android:layout_marginTop="45dp"
+        android:textSize="30sp"
+        android:textColor="@color/login_ek3_color"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
