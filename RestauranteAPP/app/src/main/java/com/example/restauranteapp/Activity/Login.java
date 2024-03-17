@@ -104,7 +104,7 @@ public class Login extends AppCompatActivity {
     }
     public void mensaje(String msg)
     {
-        AlertDialog.Builder alerta = new AlertDialog.Builder(this);
+        AlertDialog.Builder alerta = new AlertDialog.Builder(Login.this);
         alerta.setMessage(msg);
         alerta.show();
     }

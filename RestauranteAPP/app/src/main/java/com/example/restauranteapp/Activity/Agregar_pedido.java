@@ -1,6 +1,7 @@
 package com.example.restauranteapp.Activity;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -56,6 +57,8 @@ public class Agregar_pedido extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         setContentView(R.layout.agregar_pedido);
 
         //edit_mesa = (EditText) findViewById(R.id.edit_mesa);
@@ -260,6 +263,24 @@ public class Agregar_pedido extends AppCompatActivity {
                             button.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View view) {
+                                    PedidoFragment dialogFragment = new PedidoFragment();
+                                    int ca=0;
+                                    int veri=0;
+                                    // Crea un Bundle para pasar los datos
+                                    Bundle bundle = new Bundle();
+
+                                    bundle.putString("nom_plato", x.getNombrePlato());
+
+
+
+                                    dialogFragment.setArguments(bundle);
+
+                                    dialogFragment.show(getSupportFragmentManager(), "tag");
+
+
+
+
+
 
 
 
@@ -286,6 +307,9 @@ public class Agregar_pedido extends AppCompatActivity {
                 Toast.makeText(Agregar_pedido.this, "Ocurrió un error", Toast.LENGTH_LONG).show();
             }
         });
+    }
+    public void receiveDataFromDialog(String stringData, int intData, boolean booleanData) {
+        // Haz algo con los datos recibidos del DialogFragment
     }
 
 

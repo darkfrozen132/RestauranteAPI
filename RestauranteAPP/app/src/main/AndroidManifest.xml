@@ -12,6 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/AppTheme"
         tools:targetApi="31">
+        <activity android:name=".Activity.PedidoFragment"
+            android:exported="false" />
         <activity
             android:name=".Activity.mesas"
             android:exported="false" />
