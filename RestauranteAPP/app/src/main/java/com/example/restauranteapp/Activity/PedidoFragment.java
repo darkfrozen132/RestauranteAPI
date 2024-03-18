@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -78,6 +79,12 @@ public class PedidoFragment  extends DialogFragment {
         plato.setText(nombre);
         cantidad.setText("1");
 
+        btn_cancelar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                dismiss();
+            }
+        });
         btn_inscremento.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -101,10 +108,7 @@ public class PedidoFragment  extends DialogFragment {
                 if(cant>=2) {
                     cant--;
                 }
-
-
                 cantidad.setText(String.valueOf(cant));
-
 
             }
 
@@ -113,12 +117,31 @@ public class PedidoFragment  extends DialogFragment {
         btn_aceptar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                dismiss();
+                int cant = Integer.parseInt(cantidad.getText().toString());
+                String nombrePlato = plato.getText().toString();
 
+                // Obtener una referencia al TextView summary en la actividad Agregar_pedido
+                TextView txtResumen = ((Agregar_pedido) getActivity()).findViewById(R.id.text_resumen);
+
+
+                String textoActual = txtResumen.getText().toString();
+
+
+                String nuevoTexto = textoActual + "\nPlato: " + nombrePlato + ", Cantidad: " + cant;
+
+                if(nuevoTexto= textoActual) {
+
+
+                }
+                    // Actualizar el TextView summary con el texto acumulado
+                txtResumen.setText(nuevoTexto);
+
+
+                txtResumen.setTextColor(Color.YELLOW);
+                txtResumen.setTextSize(18);
+                dismiss();
             }
         });
-
-
 
         return builder.create();
 
