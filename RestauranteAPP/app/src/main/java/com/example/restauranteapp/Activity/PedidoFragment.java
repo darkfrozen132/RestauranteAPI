@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.os.Bundle;
 
@@ -48,7 +50,7 @@ public class PedidoFragment  extends DialogFragment {
 
 
 
-
+    private int contador=0;
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -88,8 +90,9 @@ public class PedidoFragment  extends DialogFragment {
         btn_inscremento.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
+                int cant=1;
                 String can = cantidad.getText().toString();
-                int cant = Integer.parseInt(can);
+                cant = Integer.parseInt(can);
 
                 cant++;
 
@@ -103,8 +106,9 @@ public class PedidoFragment  extends DialogFragment {
         btn_decremento.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
+                int cant=1;
                 String can = cantidad.getText().toString();
-                int cant = Integer.parseInt(can);
+                cant = Integer.parseInt(can);
                 if(cant>=2) {
                     cant--;
                 }
@@ -114,31 +118,69 @@ public class PedidoFragment  extends DialogFragment {
 
 
         });
-        btn_aceptar.setOnClickListener(new View.OnClickListener(){
+        btn_aceptar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
                 int cant = Integer.parseInt(cantidad.getText().toString());
                 String nombrePlato = plato.getText().toString();
 
-                // Obtener una referencia al TextView summary en la actividad Agregar_pedido
-                TextView txtResumen = ((Agregar_pedido) getActivity()).findViewById(R.id.text_resumen);
 
+                // Obtener una referencia al LinearLayout
+                LinearLayout linearLayoutResumen = ((Agregar_pedido) getActivity()).findViewById(R.id.linearlayout_resumen);
+                boolean platoExistente = false;
 
-                String textoActual = txtResumen.getText().toString();
+                // Crear un nuevo TextView y configurar su texto
+                TextView nuevoTextView = new TextView(getActivity());
 
+                nuevoTextView.setId(contador);
+                for (int i = 0; i < linearLayoutResumen.getChildCount(); i++) {
+                    View child = linearLayoutResumen.getChildAt(i);
+                    if (child instanceof TextView) {
+                        TextView textView = (TextView) child;
+                        String textoActual = textView.getText().toString();
 
-                String nuevoTexto = textoActual + "\nPlato: " + nombrePlato + ", Cantidad: " + cant;
+                        if (textoActual.contains(nombrePlato) ) {
+                            // Si el plato ya está en el resumen, actualizar la cantidad
+                            int indiceSeparador = textoActual.indexOf(":");
+                            String parteAntesDelSeparador = textoActual.substring(indiceSeparador+1);
+                            int num = Integer.parseInt(parteAntesDelSeparador);
+                            cant = num + cant;
 
-                if(nuevoTexto= textoActual) {
+                            textView.setText(nombrePlato + "Cantidad:" + cant);
+                            textView.setTextColor(Color.YELLOW);
+                            textView.setTextSize(18);
+                            platoExistente = true;
+                            break;
 
-
+                        }
+                    }
                 }
-                    // Actualizar el TextView summary con el texto acumulado
-                txtResumen.setText(nuevoTexto);
+
+                if (!platoExistente) {
+                    nuevoTextView.setText(nombrePlato + "Cantidad:" + cant);
+                    nuevoTextView.setTextColor(Color.YELLOW);
+                    nuevoTextView.setTextSize(18);
+                    linearLayoutResumen.addView(nuevoTextView);
+                }
 
 
-                txtResumen.setTextColor(Color.YELLOW);
-                txtResumen.setTextSize(18);
+
+
+
+                contador++;
+                cantidad.setText("");
+                plato.setText("");
+
+                dismiss();
+            }
+        });
+
+        btn_cancelar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+
                 dismiss();
             }
         });

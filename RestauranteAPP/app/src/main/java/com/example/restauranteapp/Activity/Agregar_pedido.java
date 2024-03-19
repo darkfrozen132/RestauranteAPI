@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -49,9 +50,11 @@ public class Agregar_pedido extends AppCompatActivity {
 
     private Button aceptar;
     private Button limpiar;
-    private TextView summary;
+    private ScrollView summary;
 
     private TextView mesa;
+
+    private LinearLayout linealres;
 
 
     @Override
@@ -70,8 +73,9 @@ public class Agregar_pedido extends AppCompatActivity {
         seleccionar_tipo=(TextView) findViewById(R.id.textView_mesa);
         checkbox_container  =(LinearLayout) findViewById(R.id.checkboxContainer);
 
-        summary =(TextView) findViewById(R.id.text_resumen);
+        summary =(ScrollView) findViewById(R.id.scrolresumen);
         mesa=(TextView) findViewById(R.id.mesa);
+        linealres=(LinearLayout) findViewById(R.id.linearlayout_resumen);
 
         int id_mesa = getIntent().getIntExtra("ID_MESA", 0);
 
