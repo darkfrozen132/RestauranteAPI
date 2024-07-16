@@ -2,65 +2,53 @@ package com.example.restauranteapp.Models;
 
 public class Usuario {
 
-    private int idUsuario;
+    private int IdUsuario;
 
-    private String categoria;
+    private String Categoria;
 
-    private String usuario;
+    private String Usuario;
 
-    private String contrasena;
-
+    private String Contrasena;
 
     public Usuario(){
 
     }
-
-    public Usuario(int idUsuario) {
-        idUsuario = idUsuario;
-    }
-
     public Usuario(int idUsuario, String categoria, String usuario, String contrasena) {
-        this.idUsuario = idUsuario;
-        this.categoria = categoria;
-        this.usuario = usuario;
-        this.contrasena = contrasena;
-    }
-
-    public Usuario(String categoria, String usuario, String contrasena) {
-        this.categoria = categoria;
-        this.usuario = usuario;
-        this.contrasena = contrasena;
+        IdUsuario = idUsuario;
+        Categoria = categoria;
+        Usuario = usuario;
+        Contrasena = contrasena;
     }
 
     public int getIdUsuario() {
-        return idUsuario;
+        return IdUsuario;
     }
 
     public void setIdUsuario(int idUsuario) {
-        idUsuario = idUsuario;
+        IdUsuario = idUsuario;
     }
 
     public String getCategoria() {
-        return categoria;
+        return Categoria;
     }
 
     public void setCategoria(String categoria) {
-        this.categoria = categoria;
+        Categoria = categoria;
     }
 
     public String getUsuario() {
-        return usuario;
+        return Usuario;
     }
 
     public void setUsuario(String usuario) {
-        this.usuario = usuario;
+        Usuario = usuario;
     }
 
     public String getContrasena() {
-        return contrasena;
+        return Contrasena;
     }
 
     public void setContrasena(String contrasena) {
-        this.contrasena = contrasena;
+        Contrasena = contrasena;
     }
 }

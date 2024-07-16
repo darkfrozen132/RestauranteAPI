@@ -21,7 +21,10 @@ import com.example.restauranteapp.Util.ConnectionREST;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
 
 import android.view.View;
 import android.widget.TextView;
@@ -79,11 +82,12 @@ public class Login extends AppCompatActivity {
     private void verificar(Usuario obj) {
         String parametro= obj.getUsuario();
         Call<Void> call = serviceAPI.verificacion(obj);
+
         call.enqueue(new Callback<Void>() {
 
             @Override
             public void onResponse(Call<Void> call, Response<Void> response) {
-
+                mensaje("HOLAAA");
                if(response.isSuccessful())
                {
 
@@ -98,7 +102,7 @@ public class Login extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<Void> call, Throwable t) {
-                Toast.makeText(Login.this,"Error", Toast.LENGTH_LONG).show();
+                Toast.makeText(Login.this, "Error: " + t.getMessage(), Toast.LENGTH_LONG).show();
             }
         });
     }
