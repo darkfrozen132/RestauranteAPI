@@ -1,3 +1,0 @@
-com.example.restauranteapp.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme
