@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+
+    <View
+        android:id="@+id/vista_menu_principal"
+        android:layout_width="1445dp"
+        android:layout_height="877dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/_bg__login_ek2_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/agregar_pedido"
+        android:layout_width="287dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="162dp"
+        android:background="@color/login_ek3_color"
+        android:gravity="center"
+        android:text="AGREGAR PEDIDO"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cambiar_pedido"
+        android:layout_width="287dp"
+        android:layout_height="120dp"
+
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="399dp"
+        android:background="@color/login_ek3_color"
+        android:gravity="center"
+        android:text="CAMBIAR PEDIDO"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/personal"
+        android:layout_width="287dp"
+        android:layout_height="120dp"
+
+        android:layout_marginStart="933dp"
+        android:layout_marginTop="399dp"
+        android:background="@color/login_ek3_color"
+        android:gravity="center"
+        android:text="PERSONAL"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/agregar_plato"
+        android:layout_width="287dp"
+        android:layout_height="120dp"
+
+        android:layout_marginStart="509dp"
+        android:layout_marginTop="162dp"
+        android:background="@color/login_ek3_color"
+        android:gravity="center"
+        android:text="AGREGAR PLATO"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/agregar_cliente"
+        android:layout_width="287dp"
+        android:layout_height="120dp"
+
+        android:layout_marginStart="910dp"
+        android:layout_marginTop="162dp"
+        android:background="@color/login_ek3_color"
+        android:gravity="center"
+        android:text="AGREGAR CLIENTE"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mesas"
+        android:layout_width="287dp"
+        android:layout_height="120dp"
+
+        android:layout_marginStart="496dp"
+        android:layout_marginTop="396dp"
+        android:background="@color/login_ek3_color"
+        android:gravity="center"
+        android:text="MESAS"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/menu_principal_admin"
+        android:layout_width="416dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="56dp"
+        android:background="@color/login_ek3_color"
+        android:gravity="center"
+        android:text="MENU PRINCIPAL-ADMIN"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="432dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

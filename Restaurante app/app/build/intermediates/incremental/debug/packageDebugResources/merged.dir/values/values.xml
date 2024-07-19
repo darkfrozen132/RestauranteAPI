@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorDarkYellow">#FFD700</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="fondo">#143D59</color>
+    <color name="login_ek3_color">#F4B41A</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="user_color">#AE5F5F</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="contrase_a__string">Contrasea:</string>
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="iniciar_sesion_string">INICIAR SESION</string>
+    <string name="login_ek3_string">LOGIN</string>
+    <string name="password_string">password</string>
+    <string name="user_string">user</string>
+    <string name="usuario__string">Usuario:</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+	</style>
+    <style name="SpinnerStyle" parent="Widget.AppCompat.Spinner">
+		<item name="android:background">#FFFF00</item> 
+		<item name="android:textSize">18sp</item> 
+	</style>
+    <style name="Theme.RestauranteAPP" parent="Base.Theme.RestauranteAPP">
+        
+        
+    </style>
+</resources>

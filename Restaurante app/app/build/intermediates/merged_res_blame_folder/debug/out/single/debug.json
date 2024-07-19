@@ -1,0 +1,162 @@
+[
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/drawable_azulongin.PNG.flat",
+        "source": "com.example.restauranteapp-main-33:/drawable/azulongin.PNG"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/drawable_login.png.flat",
+        "source": "com.example.restauranteapp-main-33:/drawable/login.png"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/layout_login.xml.flat",
+        "source": "com.example.restauranteapp-main-33:/layout/login.xml"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/drawable_border_black.xml.flat",
+        "source": "com.example.restauranteapp-main-33:/drawable/border_black.xml"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/layout_agregar_pedido.xml.flat",
+        "source": "com.example.restauranteapp-main-33:/layout/agregar_pedido.xml"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.restauranteapp-main-33:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.restauranteapp-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/drawable_button_background.xml.flat",
+        "source": "com.example.restauranteapp-main-33:/drawable/button_background.xml"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/drawable_loginfondo.jpg.flat",
+        "source": "com.example.restauranteapp-main-33:/drawable/loginfondo.jpg"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/drawable-nodpi_rectangle_3_shape.xml.flat",
+        "source": "com.example.restauranteapp-main-33:/drawable-nodpi/rectangle_3_shape.xml"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.restauranteapp-main-33:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.restauranteapp-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/xml_network_security_config.xml.flat",
+        "source": "com.example.restauranteapp-main-33:/xml/network_security_config.xml"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.restauranteapp-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "com.example.restauranteapp-main-33:/mipmap-anydpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/drawable_boton_atras.xml.flat",
+        "source": "com.example.restauranteapp-main-33:/drawable/boton_atras.xml"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.restauranteapp-main-33:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.restauranteapp-main-33:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/layout_activity_main.xml.flat",
+        "source": "com.example.restauranteapp-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/drawable_rectangle_2.png.flat",
+        "source": "com.example.restauranteapp-main-33:/drawable/rectangle_2.png"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/drawable_user.png.flat",
+        "source": "com.example.restauranteapp-main-33:/drawable/user.png"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/drawable_back.webp.flat",
+        "source": "com.example.restauranteapp-main-33:/drawable/back.webp"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/xml_backup_rules.xml.flat",
+        "source": "com.example.restauranteapp-main-33:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.restauranteapp-main-33:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.restauranteapp-main-33:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/layout_mesas.xml.flat",
+        "source": "com.example.restauranteapp-main-33:/layout/mesas.xml"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/drawable_diseno_boton.xml.flat",
+        "source": "com.example.restauranteapp-main-33:/drawable/diseno_boton.xml"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/layout_agregar_pedido_fragment.xml.flat",
+        "source": "com.example.restauranteapp-main-33:/layout/agregar_pedido_fragment.xml"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/drawable_boton_atras_img.webp.flat",
+        "source": "com.example.restauranteapp-main-33:/drawable/boton_atras_img.webp"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.restauranteapp-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/drawable_libre.jpg.flat",
+        "source": "com.example.restauranteapp-main-33:/drawable/libre.jpg"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/drawable_rectangle_1.png.flat",
+        "source": "com.example.restauranteapp-main-33:/drawable/rectangle_1.png"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/drawable-nodpi__bg__login_ek2_shape.xml.flat",
+        "source": "com.example.restauranteapp-main-33:/drawable-nodpi/_bg__login_ek2_shape.xml"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/drawable-nodpi__bg__ipad_pro_12_9____1_ek2_shape.xml.flat",
+        "source": "com.example.restauranteapp-main-33:/drawable-nodpi/_bg__ipad_pro_12_9____1_ek2_shape.xml"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/drawable-nodpi__bg__frame_1_ek1_shape.xml.flat",
+        "source": "com.example.restauranteapp-main-33:/drawable-nodpi/_bg__frame_1_ek1_shape.xml"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.restauranteapp-main-33:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.restauranteapp-main-33:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/drawable-nodpi__bg__group_1_ek1_shape.xml.flat",
+        "source": "com.example.restauranteapp-main-33:/drawable-nodpi/_bg__group_1_ek1_shape.xml"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "com.example.restauranteapp-main-33:/mipmap-anydpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.restauranteapp-merged_res-31:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.restauranteapp-main-33:/drawable/ic_launcher_background.xml"
+    }
+]
