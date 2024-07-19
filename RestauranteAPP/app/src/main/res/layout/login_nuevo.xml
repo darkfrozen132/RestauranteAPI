@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A80AA">
+
+    <TextView
+        android:id="@+id/textView_welcome"
+        android:layout_width="538dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="467dp"
+        android:layout_marginTop="112dp"
+        android:text="Bienvenido"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label_usuario"
+        android:layout_width="285dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="284dp"
+        android:text="Username"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_usuario"
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toEndOf="@id/label_usuario"
+        app:layout_constraintTop_toBottomOf="@id/textView_welcome"
+        android:hint="Introduce tu usuario"/>
+
+    <TextView
+        android:id="@+id/label_contrasena"
+        android:layout_width="294dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="440dp"
+        android:text="Contraseña"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_contrasena"
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="464dp"
+        android:layout_marginTop="424dp"
+        android:background="#FFFFFF"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="Introduce tu contraseña"
+
+        />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="464dp"
+        android:layout_marginTop="640dp"
+        android:backgroundTint="#6C63FF"
+        android:padding="42dp"
+        android:text="Iniciar Sesión"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
