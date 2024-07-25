@@ -9,9 +9,9 @@
 
     <View
         android:id="@+id/vista_menu_principal"
-        android:layout_width="1445dp"
-        android:layout_height="877dp"
-        android:layout_marginStart="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="-1dp"
 
         android:background="@drawable/login"
         app:layout_constraintStart_toStartOf="parent"
