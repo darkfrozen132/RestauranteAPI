@@ -1,7 +1,5 @@
 package com.example.restauranteapp.Activity;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -13,24 +11,18 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.FrameLayout;
-import android.widget.GridLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.restauranteapp.Appi.ServiceAPPIMesas;
-import com.example.restauranteapp.Appi.ServiceAPPIPlato;
 import com.example.restauranteapp.Models.Mesas;
 import com.example.restauranteapp.R;
 import com.example.restauranteapp.Util.ConnectionREST;
-
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -39,10 +31,8 @@ public class mesas extends AppCompatActivity {
 
    private Spinner spinerPisos;
 
-   private EditText editText;
     private ServiceAPPIMesas serviceAPI ;
 
-    private Button btnEliminar;
     private List<Mesas> mesasList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
