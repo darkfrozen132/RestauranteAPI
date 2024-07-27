@@ -1,42 +1,38 @@
 package com.example.restauranteapp.Activity;
-import androidx.appcompat.app.AppCompatActivity;
-
+// Componentes de UI de Android
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
+// AppCompat
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.restauranteapp.R;
-
-import  com.example.restauranteapp.Appi.ServiceAPPIUsuario;
+// Importaciones específicas del proyecto
+import com.example.restauranteapp.R; // Recursos
+//Apiservicios con clases
+import com.example.restauranteapp.Appi.ServiceAPPIUsuario;
 import com.example.restauranteapp.Models.Usuario;
-import com.example.restauranteapp.R;
+//Conexion
 import com.example.restauranteapp.Util.ConnectionREST;
 
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
+// Biblioteca Retrofit para networking
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 
-import android.view.View;
-import android.widget.TextView;
-import android.widget.ImageView;
 public class Login extends AppCompatActivity {
 
 
     private TextView user;
     private TextView password;
-
     private Button iniciar_sesion;
-
     private ServiceAPPIUsuario serviceAPI;
 
     @Override
@@ -92,7 +88,7 @@ public class Login extends AppCompatActivity {
                    startActivity(intent);
 
                }else {
-                 mensaje("SU CUENTA NO EXISTE");
+                 mensaje("Su usuario o contraseña es incorrecta");
                }
 
             }
