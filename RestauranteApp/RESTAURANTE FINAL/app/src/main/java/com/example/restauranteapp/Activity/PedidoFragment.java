@@ -199,17 +199,18 @@ public class PedidoFragment  extends DialogFragment {
                     nuevoRowLayout.addView(nuevoTextViewPrecio);
 
                     linearLayoutResumen.addView(nuevoRowLayout);
-                    TextView totalTextView2 = ((Agregar_pedido) getActivity()).findViewById(R.id.txtTotalPlatos);
-                    String text = totalTextView2.getText().toString();
-                    if(text.isEmpty()) {
-                         precio_ant = 0.0;
-                     }  else {
-                        precio_ant =Double.parseDouble(text);
-                    }
-                      totalPedido = precio * cant + precio_ant;
+
 
 
                 }
+                TextView totalTextView2 = ((Agregar_pedido) getActivity()).findViewById(R.id.txtTotalPlatos);
+                String text = totalTextView2.getText().toString();
+                if(text.isEmpty()) {
+                    precio_ant = 0.0;
+                }  else {
+                    precio_ant =Double.parseDouble(text);
+                }
+                totalPedido = precio * cant + precio_ant;
                String totalPedidoStr = String.format("%.2f", totalPedido);
                  TextView totalTexView =  ((Agregar_pedido) getActivity()).findViewById(R.id.txtTotalPlatos);
                totalTexView.setText(totalPedidoStr);
