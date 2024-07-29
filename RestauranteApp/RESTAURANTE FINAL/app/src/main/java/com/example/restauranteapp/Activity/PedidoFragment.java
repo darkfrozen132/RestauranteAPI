@@ -120,22 +120,16 @@ public class PedidoFragment  extends DialogFragment {
         });
         btn_aceptar.setOnClickListener(new View.OnClickListener() {
             private int contador = 0;
-
-            private  String prueba;
-            double precio_ant;
-
+           private  double precio_ant ;
             @Override
             public void onClick(View view) {
-                // Get the quantity, name of the dish, and price
                 int cant = Integer.parseInt(cantidad.getText().toString());
                 String nombrePlato = plato.getText().toString();
                 double precio = Double.parseDouble(precio_Plato.getText().toString());
 
-                // Get a reference to the LinearLayout
                 LinearLayout linearLayoutResumen = ((Agregar_pedido) getActivity()).findViewById(R.id.linearlayout_resumen);
                 boolean platoExistente = false;
 
-                // Loop through the children of the LinearLayout to find existing TextViews
                 for (int i = 0; i < linearLayoutResumen.getChildCount(); i++) {
                     View child = linearLayoutResumen.getChildAt(i);
                     if (child instanceof LinearLayout) {
@@ -149,26 +143,18 @@ public class PedidoFragment  extends DialogFragment {
                             double precioActual = Double.parseDouble(textViewPrecio.getText().toString());
 
                             int nuevaCantidad = cantidadActual + cant;
-                            double nuevoPrecio = (precioActual / cantidadActual) * nuevaCantidad;
+                            double nuevoPrecio = precio * nuevaCantidad;
 
-                            // Update the TextView with the new quantity and price
                             textViewCantidad.setText(String.valueOf(nuevaCantidad));
-                            textViewPrecio.setText(String.valueOf(nuevoPrecio));
+                            textViewPrecio.setText(String.format("%.2f", nuevoPrecio));
 
-                            textViewCantidad.setTextColor(Color.YELLOW);
-                            textViewCantidad.setTextSize(18);
-                            textViewPrecio.setTextColor(Color.YELLOW);
-                            textViewPrecio.setTextSize(18);
-
-                            // Update the total price
                             totalPedido = totalPedido - precioActual + nuevoPrecio;
                             platoExistente = true;
                             break;
                         }
-                   }
+                    }
                 }
 
-                // If the dish does not exist, add a new row
                 if (!platoExistente) {
                     LinearLayout nuevoRowLayout = new LinearLayout(getActivity());
                     nuevoRowLayout.setOrientation(LinearLayout.HORIZONTAL);
@@ -177,7 +163,6 @@ public class PedidoFragment  extends DialogFragment {
                             LinearLayout.LayoutParams.WRAP_CONTENT
                     ));
 
-                    // Create TextView for the dish name
                     TextView nuevoTextViewPlato = new TextView(getActivity());
                     nuevoTextViewPlato.setText(nombrePlato);
                     nuevoTextViewPlato.setTextColor(Color.YELLOW);
@@ -189,7 +174,6 @@ public class PedidoFragment  extends DialogFragment {
                     ));
                     nuevoRowLayout.addView(nuevoTextViewPlato);
 
-                    // Create TextView for the quantity
                     TextView nuevoTextViewCantidad = new TextView(getActivity());
                     nuevoTextViewCantidad.setText(String.valueOf(cant));
                     nuevoTextViewCantidad.setTextColor(Color.YELLOW);
@@ -202,9 +186,8 @@ public class PedidoFragment  extends DialogFragment {
                     nuevoTextViewCantidad.setPadding(16, 0, 0, 0);
                     nuevoRowLayout.addView(nuevoTextViewCantidad);
 
-                    // Create TextView for the price
                     TextView nuevoTextViewPrecio = new TextView(getActivity());
-                    nuevoTextViewPrecio.setText(String.valueOf(precio * cant));
+                    nuevoTextViewPrecio.setText(String.format("%.2f", precio * cant));
                     nuevoTextViewPrecio.setTextColor(Color.YELLOW);
                     nuevoTextViewPrecio.setTextSize(18);
                     nuevoTextViewPrecio.setLayoutParams(new LinearLayout.LayoutParams(
@@ -218,36 +201,19 @@ public class PedidoFragment  extends DialogFragment {
                     linearLayoutResumen.addView(nuevoRowLayout);
                     TextView totalTextView2 = ((Agregar_pedido) getActivity()).findViewById(R.id.txtTotalPlatos);
                     String text = totalTextView2.getText().toString();
-
-                    double precio_ant;
-                    if (text.isEmpty()) {
-                        precio_ant = 0.0;
+                    if(text.isEmpty()) {
+                         precio_ant = 0.0;
+                     }  else {
+                        precio_ant =Double.parseDouble(text);
                     }
-                        else {
-                            try {
-                                precio_ant = Double.parseDouble(text);
-                            } catch (NumberFormatException e) {
-                                // Maneja el error, por ejemplo, mostrando un mensaje al usuario
-                                precio_ant = 0.0;
-                            }
-                        }
-                     totalPedido = precio_ant + cant*precio;
-                    totalTextView2.setText("" + totalPedido);
-                    }
+                      totalPedido = precio * cant + precio_ant;
 
 
+                }
+               String totalPedidoStr = String.format("%.2f", totalPedido);
+                 TextView totalTexView =  ((Agregar_pedido) getActivity()).findViewById(R.id.txtTotalPlatos);
+               totalTexView.setText(totalPedidoStr);
 
-// Actualiza el precio total
-                     // Asegúrate de que 'precio' y 'cant' están definidos
-
-// Convierte el total a una cadena con dos decimales
-
-
-
-
-
-
-                    // Clear the input fields and increment the counter
                 contador++;
                 cantidad.setText("");
                 plato.setText("");
@@ -256,6 +222,7 @@ public class PedidoFragment  extends DialogFragment {
                 dismiss();
             }
         });
+
 
 
 

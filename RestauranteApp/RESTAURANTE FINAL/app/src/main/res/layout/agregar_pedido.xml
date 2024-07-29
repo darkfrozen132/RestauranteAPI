@@ -9,8 +9,8 @@
         android:id="@+id/view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="-1dp"
         android:background="@drawable/_bg__login_ek2_shape"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -118,9 +118,9 @@
         android:id="@+id/txtTotalPlatos"
         android:layout_width="114dp"
         android:layout_height="58dp"
-        android:layout_marginStart="1015dp"
-        android:layout_marginTop="714dp"
-        android:text="TextView"
+        android:layout_marginStart="900dp"
+        android:layout_marginTop="600dp"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
