@@ -56,6 +56,7 @@ public class Agregar_pedido extends AppCompatActivity {
 
     private LinearLayout linealres;
 
+    private Button  Btn_final;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +76,7 @@ public class Agregar_pedido extends AppCompatActivity {
         summary =(ScrollView) findViewById(R.id.scrolresumen);
         mesa=(TextView) findViewById(R.id.mesa);
         linealres=(LinearLayout) findViewById(R.id.linearlayout_resumen);
+        Btn_final = (Button)   findViewById(R.id.btn_enviar);
 
         int id_mesa = getIntent().getIntExtra("ID_MESA", 0);
 
@@ -282,21 +284,10 @@ public class Agregar_pedido extends AppCompatActivity {
                                     dialogFragment.show(getSupportFragmentManager(), "tag");
 
 
-
-
-
-
-
-
-
                                 }
                             });
 
-
                             checkbox_container.addView(button);
-
-
-
 
                         }
                     }

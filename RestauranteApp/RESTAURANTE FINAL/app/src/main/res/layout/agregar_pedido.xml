@@ -64,11 +64,24 @@
         android:id="@+id/btn_atras"
         android:layout_width="166dp"
         android:layout_height="176dp"
-        android:layout_marginStart="984dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="1044dp"
+        android:layout_marginTop="44dp"
         android:drawableLeft="@drawable/back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_enviar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="1064dp"
+        android:layout_marginTop="652dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        />
 
     <ScrollView
         android:id="@+id/scrolresumen"
@@ -102,8 +115,8 @@
     <ScrollView
         android:layout_width="448dp"
         android:layout_height="402dp"
-        android:layout_marginStart="681dp"
-        android:layout_marginTop="277dp"
+        android:layout_marginStart="692dp"
+        android:layout_marginTop="220dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -118,10 +131,11 @@
         android:id="@+id/txtTotalPlatos"
         android:layout_width="114dp"
         android:layout_height="58dp"
-        android:layout_marginStart="900dp"
-        android:layout_marginTop="600dp"
+        android:layout_marginStart="952dp"
+        android:layout_marginTop="576dp"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
