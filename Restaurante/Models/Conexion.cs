@@ -33,7 +33,7 @@ public partial class Conexion : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=restauranteweb.database.windows.net;User ID=restaurante;Password=123456789Leo;Initial Catalog=restaurante;Encrypt=True");
+     => optionsBuilder.UseSqlServer("Data Source=SQL8010.site4now.net;Initial Catalog=db_aab074_dbcuenta;User Id=db_aab074_dbcuenta_admin;Password=123456789smart");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -73,6 +73,8 @@ public partial class Conexion : DbContext
                 .IsUnicode(false)
                 .HasColumnName("descripcion");
             entity.Property(e => e.Reservado).HasColumnName("reservado");
+            entity.Property(e => e.dLeft).ValueGeneratedNever().HasColumnName("dleft");
+            entity.Property(e => e.dUp).ValueGeneratedNever().HasColumnName("dup");
         });
 
         modelBuilder.Entity<TaPedido>(entity =>

@@ -33,7 +33,8 @@ namespace Restaurante.Service
             obj.Descripcion = taMesa.Descripcion;
             obj.Reservado = taMesa.Reservado;
             obj.TaPedidos = taMesa.TaPedidos;
-            
+            obj.dLeft = taMesa.dLeft;
+            obj.dUp = taMesa.dUp;
             conex.SaveChanges();
         }
 

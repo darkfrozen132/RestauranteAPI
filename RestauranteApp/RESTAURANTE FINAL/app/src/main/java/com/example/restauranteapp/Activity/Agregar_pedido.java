@@ -1,5 +1,9 @@
 package com.example.restauranteapp.Activity;
-
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.sql.Date;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -18,8 +22,10 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.restauranteapp.Appi.ServiceAPPIMesas;
+import com.example.restauranteapp.Appi.ServiceAPPIPedido;
 import com.example.restauranteapp.Appi.ServiceAPPIPlato;
 import com.example.restauranteapp.Models.Mesas;
+import com.example.restauranteapp.Models.Pedido;
 import com.example.restauranteapp.Models.Plato;
 import com.example.restauranteapp.R;
 import com.example.restauranteapp.Util.ConnectionREST;
@@ -31,14 +37,12 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 public class Agregar_pedido extends AppCompatActivity {
-    private View view;
-    private Spinner spinner;
 
-    private EditText edit_mesa;
     private TextView textView;
     private Spinner spiner_mesa;
     private ServiceAPPIPlato serviceAPI;
 
+    private ServiceAPPIPedido serviceAPPIPedido;
     private Spinner spiner_tipo;
     private Button boton_atras;
     private TextView seleccionar_tipo;
@@ -81,8 +85,8 @@ public class Agregar_pedido extends AppCompatActivity {
         int id_mesa = getIntent().getIntExtra("ID_MESA", 0);
 
         mesa.setText(String.valueOf(id_mesa));
-        //spinner_mesas();
-
+        serviceAPI = ConnectionREST.getConnection().create(ServiceAPPIPlato.class);
+        serviceAPPIPedido = ConnectionREST.getConnection().create(ServiceAPPIPedido.class);
         get_mesas(id_mesa,textView);
         spinner_tipo();
 
@@ -95,7 +99,16 @@ public class Agregar_pedido extends AppCompatActivity {
             }
         });
 
+        Btn_final.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                LocalDate currentDate = LocalDate.now();
+                LocalTime currentTime = LocalTime.now();
+                Pedido pObj = new Pedido(1,1,1,1,currentDate,currentTime,currentTime,200);
+                  addPedido(pObj);
+            }
 
+        });
 
 
 
@@ -310,13 +323,47 @@ public class Agregar_pedido extends AppCompatActivity {
 
 
 
+
+
+
     public void mensaje(String msg)
     {
         AlertDialog.Builder alerta = new AlertDialog.Builder(this);
         alerta.setMessage(msg);
         alerta.show();
     }
+public  void addPedido(Pedido obj)
+{
+  Call<Pedido> call =serviceAPPIPedido.add(obj);
+    LocalDate currentDate = LocalDate.now();
+    LocalTime currentTime = LocalTime.now();
+   String Prueba =  currentTime.toString();
+    mensaje(Prueba);
+  call.enqueue(new Callback<Pedido>() {
+      @Override
+      public void onResponse(Call<Pedido> call, Response<Pedido> response) {
+          if(response.isSuccessful())
+          {
+              Pedido ped = response.body();
+              mensaje("Registro grabado satisfactoriamente!");
+          }
+          else
+          {
+              mensaje("Ocurrio un error al grabar los datos!");
+          }
 
+      }
+
+      @Override
+      public void onFailure(Call<Pedido> call, Throwable throwable) {
+          mensaje("Ocurrio un error al grabar los datos!");
+      }
+  });
+
+
+
+
+}
 
 
 

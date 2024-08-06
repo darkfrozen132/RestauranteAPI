@@ -11,7 +11,7 @@ public partial class TaCliente
 
     public int IdTipoCliente { get; set; }
 
-    public virtual TaTipoCliente IdTipoClienteNavigation { get; set; } = null!;
+    public virtual TaTipoCliente? IdTipoClienteNavigation { get; set; } = null;
 
     public virtual ICollection<TaPedido> TaPedidos { get; set; } = new List<TaPedido>();
 }

@@ -13,5 +13,9 @@ public partial class TaMesa
 
     public int Reservado { get; set; }
 
+    public int dLeft {  get; set; }
+
+    public int dUp { get; set; }
+
     public virtual ICollection<TaPedido> TaPedidos { get; set; } = new List<TaPedido>();
 }
