@@ -21,11 +21,11 @@ public partial class TaPedido
 
     public decimal? Total { get; set; }
 
-    public virtual TaCliente IdClienteNavigation { get; set; } = null!;
+    public virtual TaCliente? IdClienteNavigation { get; set; } = null;
 
-    public virtual TaMesa IdMesaNavigation { get; set; } = null!;
+    public virtual TaMesa? IdMesaNavigation { get; set; } = null;
 
-    public virtual TaPersonal IdPersonalNavigation { get; set; } = null!;
+    public virtual TaPersonal? IdPersonalNavigation { get; set; } = null;
 
     public virtual ICollection<TaPedidoDetalle> TaPedidoDetalles { get; set; } = new List<TaPedidoDetalle>();
 }
